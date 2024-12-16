@@ -7,7 +7,7 @@ interface ScrollRevealProps {
 
 const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef<HTMLElement | null>(null);
+  const elementRef = useRef<HTMLDivElement | null>(null); // Correção na tipagem
 
   useEffect(() => {
     const observer = new IntersectionObserver(
