@@ -22,7 +22,7 @@ function App() {
         <button>Acessar a Grass</button>
         <img src={grassImg} alt="Imagem Grass" />
       </ScrollReveal>
-
+      
         <ScrollReveal>
           <h2>Como funciona?</h2>
           <p className='txt-access'>
