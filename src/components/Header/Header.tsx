@@ -12,7 +12,6 @@ const Header: React.FC = () => {
                                         <section>
                             <ul>
                                 <li>Page</li>
-                                <li>Page</li>
                                 <li><a href="https://www.linkedin.com/in/lukasdesouza/" target="_blank"><button>LinkedIn</button></a></li>
                             </ul>
                                         </section>

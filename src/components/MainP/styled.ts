@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Main = styled.div<React.CSSProperties>`
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-    @media (max-width: 575px) {
+@media (max-width: 575px) {
         padding: 7px;
 
        img {
@@ -12,11 +12,16 @@ export const Main = styled.div<React.CSSProperties>`
            margin: 20px auto;
            border-radius: 10px;
        }
+
+       ul {
+        list-style: circle;
+        padding: 13px;
+        
+       }
     
        p, li {
            margin-top: 15px;
-           margin-left: 2px;
-           font-size: 15px;
+           font-size: 13px;
        }
     
        p.opn-P, h1.opn-H1 {
@@ -28,11 +33,10 @@ export const Main = styled.div<React.CSSProperties>`
        }
     
        h1, h2 {
-           font-size: 25px;
+           font-size: 23px;
            margin-top: 10px;
            font-weight: bold;
            margin-right: 10px;
-           
        }
     
        button {
@@ -41,7 +45,7 @@ export const Main = styled.div<React.CSSProperties>`
            width: 120px;
            height: 50px;
            border-radius: 5px;
-           font-size: 15px;
+           font-size: 13px;
            border: none;
        }
     

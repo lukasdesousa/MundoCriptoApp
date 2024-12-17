@@ -10,6 +10,7 @@ import men02 from './assets/img/men02.jpg';
 import woman02 from './assets/img/woman03.jpg';
 import woman03 from './assets/img/woman04.jpg';
 import ScrollReveal from './components/Scroll/ScrollReveal.tsx';
+import LineChart from './components/Chart/LineChart.tsx';
 
 function App() {
   return (
@@ -133,7 +134,10 @@ function App() {
         </ScrollReveal>
         <ScrollReveal>
           <h2>O crescimento da Grass</h2>
-          <img src={grassToken} alt="Crescimento da G" />
+          <ScrollReveal>
+            <LineChart />
+          </ScrollReveal>
+          <img src={grassToken} alt="Crescimento da Grass" />
         </ScrollReveal>
         <ScrollReveal>
           <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>

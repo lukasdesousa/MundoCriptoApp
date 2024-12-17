@@ -4,6 +4,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Small screen */
 @media (max-width: 575px) {
     section {
         display: flex;
@@ -13,14 +14,15 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         color: black;
         padding: 15px;
         height: 140px;
-        
+        overflow: hidden;
     }
     
     ul {
         list-style: none;
         display: flex; 
         align-items: center;
-        gap: 10px;
+        gap: 12px;
+        //width: 100%;
 
         li {
             button {
@@ -36,14 +38,14 @@ export const HeadStyle = styled.div<React.CSSProperties>`
     }
 
     h1 {
-        font-size: 22px;
+        font-size: 20px;
         font-family: inter, Arial, Helvetica, sans-serif;
-        position: relative;
         font-weight: bold;
-        bottom: 5px;
+        white-space: nowrap;
     }
 }
 
+/* Medium Screen */
 @media (min-width: 576px) and (max-width: 767px) {
     section {
         display: flex;
@@ -84,6 +86,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
     }
 }
 
+/* Big Screen */
 @media (min-width: 768px) {
     section {
         display: flex;
