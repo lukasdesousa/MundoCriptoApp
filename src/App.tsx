@@ -120,11 +120,11 @@ function App() {
             </section>
           </section>
         </ScrollReveal>
-        <ScrollReveal>
         <ParallaxImage
         imageSrc={grassImg} // Substitua pelo caminho da sua imagem
         altText="Imagem Parallax"
       />
+        <ScrollReveal>
           <h2>Como Funciona a Monetização da Sua Internet?</h2>
           <p>
             O processo é simples, transparente e totalmente seguro. Ao se cadastrar na <strong>Grass</strong>, você vai autorizar a plataforma a compartilhar parte da sua conexão de internet não utilizada. Isso acontece de forma totalmente automatizada e sem impacto no seu uso diário.</p>
@@ -144,11 +144,11 @@ function App() {
           <ScrollReveal>
             <LineChart />
           </ScrollReveal>
+        </ScrollReveal>
           <ParallaxImage
         imageSrc={grassToken} // Substitua pelo caminho da sua imagem
         altText="Imagem Parallax"
       />
-        </ScrollReveal>
         <ScrollReveal>
           <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>
         </ScrollReveal>

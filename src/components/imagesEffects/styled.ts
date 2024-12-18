@@ -16,9 +16,9 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   }
 
   div.image {
-    transform: translateY(40px);
+    transform: translateY(55px);
     height: 100%;
-   
+    overflow: hidden;
     border-radius: 5px;
     
     img {
