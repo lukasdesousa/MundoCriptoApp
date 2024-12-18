@@ -13,8 +13,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         gap: 50px;
         color: black;
         padding: 15px;
-        height: 140px;
-        overflow: hidden;
+        height: 120px;
     }
     
     ul {
@@ -22,7 +21,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         display: flex; 
         align-items: center;
         gap: 12px;
-        //width: 100%;
+        width: 90%;
 
         li {
             button {
@@ -42,6 +41,8 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         font-family: inter, Arial, Helvetica, sans-serif;
         font-weight: bold;
         white-space: nowrap;
+        position: relative;
+        left: 8px;
     }
 }
 

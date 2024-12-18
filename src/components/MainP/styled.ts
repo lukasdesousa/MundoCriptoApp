@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import grassImg01 from '../../assets/img/grass-banner.png';
 
 export const Main = styled.div<React.CSSProperties>`
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -6,12 +7,19 @@ export const Main = styled.div<React.CSSProperties>`
 @media (max-width: 575px) {
         padding: 7px;
 
-       img {
-           width: 90%;
-           display: block;
-           margin: 20px auto;
-           border-radius: 10px;
-       }
+        section.container-image {
+    overflow: auto;
+}
+
+div.image {
+    background-image: url(${grassImg01}); /* Caminho para a sua imagem */
+    background-position: center;
+    background-attachment: fixed; /* Ativa o efeito parallax */
+    background-size: cover; /* Faz a imagem cobrir toda a área do contêiner */
+    height: 300px; /* Altura do bloco com a imagem */
+    margin: 20px auto; /* Centraliza e espaça o bloco */
+}
+
 
        ul {
         list-style: circle;

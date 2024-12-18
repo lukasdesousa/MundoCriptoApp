@@ -1,8 +1,8 @@
 import Header from './components/Header/Header.tsx';
 import { Main } from './components/MainP/styled.ts';
-import grassImg from './assets/img/image2.webp';
-import grassImg2 from './assets/img/grass-banner.png';
-import grassToken from './assets/img/grass.png';
+import grassImg from './assets/img/grass2.webp';
+import grassImg2 from './assets/img/Cover-Grass.webp';
+import grassToken from './assets/img/Grass-Airdrop-Reached-Final-Stage-GRASS-token-Launching-Soon-1 (1).jpg';
 import Footer from './components/Footer/Footer.tsx';
 import men01 from './assets/img/men01.jpg';
 import woman01 from './assets/img/pexels-emmy-e-1252107-2381069.jpg';
@@ -11,6 +11,7 @@ import woman02 from './assets/img/woman03.jpg';
 import woman03 from './assets/img/woman04.jpg';
 import ScrollReveal from './components/Scroll/ScrollReveal.tsx';
 import LineChart from './components/Chart/LineChart.tsx';
+import ParallaxImage from './components/imagesEffects/ParallaxImage.tsx';
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum.</p><br />
         <button>Acessar a Grass</button>
-        <img src={grassImg} alt="Imagem Grass" />
+        <ParallaxImage
+        imageSrc={grassImg2} // Substitua pelo caminho da sua imagem
+        altText="Imagem Parallax"
+      />
       </ScrollReveal>
       
         <ScrollReveal>
@@ -117,7 +121,10 @@ function App() {
           </section>
         </ScrollReveal>
         <ScrollReveal>
-          <img src={grassImg2} alt="Imagem Grass" />
+        <ParallaxImage
+        imageSrc={grassImg} // Substitua pelo caminho da sua imagem
+        altText="Imagem Parallax"
+      />
           <h2>Como Funciona a Monetização da Sua Internet?</h2>
           <p>
             O processo é simples, transparente e totalmente seguro. Ao se cadastrar na <strong>Grass</strong>, você vai autorizar a plataforma a compartilhar parte da sua conexão de internet não utilizada. Isso acontece de forma totalmente automatizada e sem impacto no seu uso diário.</p>
@@ -137,7 +144,10 @@ function App() {
           <ScrollReveal>
             <LineChart />
           </ScrollReveal>
-          <img src={grassToken} alt="Crescimento da Grass" />
+          <ParallaxImage
+        imageSrc={grassToken} // Substitua pelo caminho da sua imagem
+        altText="Imagem Parallax"
+      />
         </ScrollReveal>
         <ScrollReveal>
           <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>

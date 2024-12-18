@@ -27,9 +27,11 @@ export const FooterStyle = styled.footer<React.CSSProperties>`
         }
     
         section.social-media {
+            display: flex;
+            gap: 22px;
+            
             img {
                 width: 25px;
-                margin-right: 35px;
                 opacity: 0.45;
                 transition: all 0.3s ease;
             }
