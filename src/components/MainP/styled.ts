@@ -1,30 +1,15 @@
 import styled from "styled-components";
-import grassImg01 from '../../assets/img/grass-banner.png';
 
 export const Main = styled.div<React.CSSProperties>`
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@media (max-width: 575px) {
+    @media (max-width: 575px) {
         padding: 7px;
-
-        section.container-image {
-    overflow: auto;
-}
-
-div.image {
-    background-image: url(${grassImg01}); /* Caminho para a sua imagem */
-    background-position: center;
-    background-attachment: fixed; /* Ativa o efeito parallax */
-    background-size: cover; /* Faz a imagem cobrir toda a área do contêiner */
-    height: 300px; /* Altura do bloco com a imagem */
-    margin: 20px auto; /* Centraliza e espaça o bloco */
-}
 
 
        ul {
         list-style: circle;
         padding: 13px;
-        
        }
     
        p, li {
@@ -244,6 +229,10 @@ div.image {
     }
 
     @media (min-width: 768px) {
+       @keyframes identifier {
+        
+       }
+        
         padding: 10px;
 
        .img {
@@ -257,6 +246,12 @@ div.image {
            margin-top: 15px;
            margin-left: 2px;
            font-size: 20px;
+           padding: 5px;
+       }
+
+       ul {
+        padding: 16px;
+        list-style: inside;
        }
     
        p.opn-P, h1.opn-H1 {
@@ -268,9 +263,8 @@ div.image {
        }
 
        p.opn-P {
-
+        display: none;
        }
-
     
        p.txt-access {
            opacity: 0.85;
@@ -278,9 +272,8 @@ div.image {
     
        h1, h2 {
            font-size: 30px;
-           margin-top: 10px;
            font-weight: bold;
-           
+           margin: 20px 0px;
        }
     
        button {
@@ -291,6 +284,7 @@ div.image {
            border-radius: 5px;
            font-size: 16px;
            border: none;
+           margin-bottom: 25px;
        }
     
        section.opn-inv {
@@ -312,18 +306,12 @@ div.image {
                    border: 1px solid #E6E6E6;
                    display: flex;
                    flex-direction: column;
-
-                   section.text-opn {
-                    width: 100%;
-                    height: 50%;
-                   }
     
                    p.txt-access {
                        font-size: 20px; 
                        font-family: inter, Arial, Helvetica, sans-serif;
                        font-weight: bold;
                        opacity: 1;
-                       box-sizing: border-box;
                    }
     
                    div {
@@ -332,10 +320,9 @@ div.image {
                        justify-content: space-around;
                        border-radius: 10px;
                        margin: 10px;
-                       width: 300px;
-                    flex: 1;
-                    gap: 50px;
-        
+                       flex: 1;
+                       gap: 50px;
+                                   
                        p {
                            margin: 0px;
                            text-align: center;

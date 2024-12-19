@@ -43,6 +43,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         white-space: nowrap;
         position: relative;
         left: 8px;
+        border-bottom: 1px solid #E6E6E6;
     }
 }
 
@@ -124,8 +125,9 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         font-family: inter, Arial, Helvetica, sans-serif;
         position: relative;
         bottom: 5px;
-        right: 35%;
+        right: 63%;
         font-weight: bold;
+        border-bottom: 1px solid #E6E6E6;
     }
 }
 `;

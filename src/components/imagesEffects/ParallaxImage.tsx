@@ -8,7 +8,7 @@ interface ParallaxImageProps {
   speed?: number; // Velocidade do efeito parallax
 }
 
-const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = '', speed = -50 }) => {
+const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = 'Imagem Grass', speed = -50 }) => {
   return (
     <ParallaxProvider>
       <ParallaxStyle>
@@ -18,7 +18,6 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = '', s
               <img
                 src={imageSrc}
                 alt={altText}
-                className='parallax-image'
               />
             </div>
           </Parallax>

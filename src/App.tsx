@@ -21,10 +21,12 @@ function App() {
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum.</p><br />
         <button>Acessar a Grass</button>
+        <ScrollReveal>
         <ParallaxImage
-        imageSrc={grassImg2} // Substitua pelo caminho da sua imagem
+        imageSrc={grassImg2}
         altText="Imagem Parallax"
       />
+        </ScrollReveal>
       </ScrollReveal>
       
         <ScrollReveal>

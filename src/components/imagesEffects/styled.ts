@@ -9,7 +9,7 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   section.container {
     overflow: hidden;
     margin: 20px auto;
-    height: 240px;
+    height: 100%;
     border-radius: 10px;
     width: 95%;
 
@@ -18,18 +18,49 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   div.image {
     transform: translateY(55px);
     height: 100%;
-    overflow: hidden;
     border-radius: 5px;
     
     img {
       width: 100%;
-      border-radius: 5px;
-      
+      border-radius: 10px;
+      height: 100%;
     }
   }
 
 }
 
+@media (min-width: 768px) {
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  section.container {
+    overflow: hidden;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 95%;
+    height: 500px;
+  }
+
+  div.image {
+    //transform: translateY(160px);
+    height: 100%;
+    border-radius: 5px;
+    position: sticky;
+    top: 0%;
+    
+    img {
+      width: 100%;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+
+}
 
 
 `;
