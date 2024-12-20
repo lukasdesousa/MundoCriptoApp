@@ -3,17 +3,16 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
 import { ParallaxStyle } from './styled';
 
 interface ParallaxImageProps {
-  imageSrc: string; // Caminho para a imagem
-  altText?: string; // Texto alternativo para a imagem
-  speed?: number; // Velocidade do efeito parallax
+  imageSrc: string; 
+  altText?: string; 
+  speed?: number; 
 }
 
-const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = 'Imagem Grass', speed = -50 }) => {
+const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = 'Imagem Grass', speed = -20 }) => {
   return (
     <ParallaxProvider>
       <ParallaxStyle>
-        <section className='container'>
-          <Parallax speed={speed}>
+          <Parallax speed={speed}> 
             <div className='image'>
               <img
                 src={imageSrc}
@@ -21,7 +20,6 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({ imageSrc, altText = 'Imag
               />
             </div>
           </Parallax>
-        </section>
       </ParallaxStyle>
     </ParallaxProvider>
   );

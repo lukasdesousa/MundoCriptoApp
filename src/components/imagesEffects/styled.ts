@@ -6,18 +6,13 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
 
 /* Small screen */
 @media (max-width: 575px) {
-  section.container {
-    overflow: hidden;
-    margin: 20px auto;
-    height: 100%;
-    border-radius: 10px;
-    width: 95%;
-
-  }
+  overflow: hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 95%;
 
   div.image {
-    transform: translateY(55px);
-    height: 100%;
+    transform: translateY(53px);
     border-radius: 5px;
     
     img {
@@ -30,14 +25,6 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
 }
 
 @media (min-width: 768px) {
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
   section.container {
     overflow: hidden;
     margin: 20px auto;
