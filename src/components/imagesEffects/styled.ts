@@ -6,23 +6,35 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
 
 /* Small screen */
 @media (max-width: 575px) {
-  overflow: hidden;
-  margin: 20px auto;
-  border-radius: 10px;
-  width: 95%;
-
-  div.image {
-    transform: translateY(53px);
-    border-radius: 5px;
-    
-    img {
-      width: 100%;
-      border-radius: 10px;
-      height: 100%;
-    }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Altura ajustada para mobile */
+    overflow: hidden; /* Garante que o filho não ultrapasse */
+    border-radius: 10px;
+    margin: 20px auto;
   }
 
-}
+  .image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Altura maior que o contêiner para o efeito */
+    will-change: transform; /* Otimização */
+    border-radius: 10px;
+    
+    img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  }
+
+
 
 @media (min-width: 768px) {
   section.container {
