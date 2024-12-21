@@ -18,7 +18,7 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
 
   .image {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 0;
     width: 100%;
     height: 200px; /* Altura maior que o contêiner para o efeito */
