@@ -1,8 +1,9 @@
 import Header from './components/Header/Header.tsx';
 import { Main } from './components/MainP/styled.ts';
-import grassImg from './assets/img/grass2.webp';
-import grassImg2 from './assets/img/Cover-Grass.webp';
-import grassToken from './assets/img/Grass-Airdrop-Reached-Final-Stage-GRASS-token-Launching-Soon-1 (1).jpg';
+import grassImgMobile from './assets/img/grassImgMobile.webp';
+import grassImgMobile2 from './assets/img/grass2.webp';
+import grassImgDesk from './assets/img/grassDeskAlt01.png';
+import grassImgDesk2 from './assets/img/GrassDeskAlt02.png';
 import Footer from './components/Footer/Footer.tsx';
 import men01 from './assets/img/men01.jpg';
 import woman01 from './assets/img/pexels-emmy-e-1252107-2381069.jpg';
@@ -12,8 +13,27 @@ import woman03 from './assets/img/woman04.jpg';
 import ScrollReveal from './components/Scroll/ScrollReveal.tsx';
 import LineChart from './components/Chart/LineChart.tsx';
 import ParallaxImage from './components/imagesEffects/ParallaxImage.tsx';
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
+  const isMobile = useMediaQuery({ query: '(max-width: 575px) and (max-width: 767px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
+
+  const verifyDisplay = (id: number): string => {
+    if(isMobile && id === 1) {
+      return grassImgMobile
+    } else if(isDesktop && id === 1) {
+      return grassImgDesk;
+    } else if(isDesktop && id === 2) {
+      return grassImgDesk2;
+    } else if (isMobile && id === 2) {
+      return grassImgMobile2;
+    } else if (isDesktop && id === 3) {
+      return grassImgMobile2;
+    }
+    return '';
+}
+
   return (
     <>
       <Header />
@@ -21,8 +41,9 @@ function App() {
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum.</p><br />
         <ParallaxImage
-        imageSrc={grassImg2}
+        imageSrc={verifyDisplay(1)}
         altText="Imagem Parallax"
+        classNameProp='container-1'
       />
         <ScrollReveal>
         <button>Acessar a Grass</button>
@@ -123,7 +144,8 @@ function App() {
           </section>
         </ScrollReveal>
         <ParallaxImage
-        imageSrc={grassImg}
+        classNameProp='container-2'
+        imageSrc={verifyDisplay(2)}
         altText="Imagem Parallax"
       />
         <ScrollReveal>
@@ -148,8 +170,9 @@ function App() {
           </ScrollReveal>
         </ScrollReveal>
           <ParallaxImage
-        imageSrc={grassToken} // Substitua pelo caminho da sua imagem
+        imageSrc={verifyDisplay(3)}
         altText="Imagem Parallax"
+        classNameProp='container-3'
       />
         <ScrollReveal>
           <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>

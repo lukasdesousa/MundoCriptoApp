@@ -229,10 +229,6 @@ export const Main = styled.div<React.CSSProperties>`
     }
 
     @media (min-width: 768px) {
-       @keyframes identifier {
-        
-       }
-        
         padding: 10px;
 
        .img {
@@ -245,7 +241,7 @@ export const Main = styled.div<React.CSSProperties>`
        p, li {
            margin-top: 15px;
            margin-left: 2px;
-           font-size: 20px;
+           font-size: 25px;
            padding: 5px;
        }
 
@@ -271,7 +267,7 @@ export const Main = styled.div<React.CSSProperties>`
        }
     
        h1, h2 {
-           font-size: 30px;
+           font-size: 45px;
            font-weight: bold;
            margin: 20px 0px;
        }

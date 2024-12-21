@@ -34,32 +34,92 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   }
   }
 
-
-
 @media (min-width: 768px) {
-  section.container {
-    overflow: hidden;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 95%;
-    height: 500px;
-  }
 
-  div.image {
-    //transform: translateY(160px);
+  .container {
+    height: 300px;
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .image {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
     height: 100%;
-    border-radius: 5px;
-    position: sticky;
-    top: 0%;
+    will-change: transform; 
     
     img {
+      border-radius: 12px;
       width: 100%;
-      border-radius: 10px;
-      height: 100%;
+      height: 500px;
+      object-fit: contain;
+      margin: auto;
+      border: 10px;
+      image-rendering: smooth;
+      mix-blend-mode: multiply;
+    }
+  }
+  
+  .container-1 {
+    background-color: #FAFAFA;
+    .image {
+      height: 100px;
+      img {
+        border-radius: 12px;
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
     }
   }
 
+  
+}
+.container-2 {
+  background-color:#FAFAFA;
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    will-change: transform; 
+    
+    img {
+      border-radius: 12px;
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+      margin: auto
+  }
+}
 }
 
+.container-3 {
+  border: none;
+  .image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      will-change: transform; 
+      
+      img {
+        border-radius: 12px;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        margin: auto;
+    }
+  }
+  
+}
+}
 
 `;

@@ -7,13 +7,15 @@ interface ParallaxImageProps {
   altText?: string;
   speed?: number;
   verticalOffset?: number; // Novo prop para controle de deslocamento
+  classNameProp?: string;
 }
 
 const ParallaxImage: React.FC<ParallaxImageProps> = ({
   imageSrc,
-  altText = "Imagem Parallax",
+  altText = "Imagem Parallax sobre a Grass",
   speed = 0.5,
   verticalOffset = 50, // Valor padrão para deslocar a imagem para baixo
+  classNameProp = '',
 }) => {
   const [scrollY, setScrollY] = useState(0);
   const [offsetTop, setOffsetTop] = useState(0);
@@ -41,7 +43,7 @@ const ParallaxImage: React.FC<ParallaxImageProps> = ({
 
   return (
     <ParallaxStyle>
-      <div className="container" ref={ref}>
+      <div className={`container ${classNameProp}`} ref={ref}>
         <animated.div className="image" style={props}>
           <img src={imageSrc} alt={altText} />
         </animated.div>
