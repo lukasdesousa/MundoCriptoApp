@@ -33,6 +33,11 @@ export const HeadStyle = styled.div<React.CSSProperties>`
                 font-size: 15px;
                 border: none;
             }
+
+            a {
+                color: unset;
+                text-decoration: none;
+            }
         }
     }
 

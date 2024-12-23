@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                         <h1>Mundo Cripto</h1>
                                         <section>
                             <ul>
-                                <li>Page</li>
+                                <li><a href="">Token</a></li>
                                 <li><a href="https://www.linkedin.com/in/lukasdesouza/" target="_blank"><button>LinkedIn</button></a></li>
                             </ul>
                                         </section>

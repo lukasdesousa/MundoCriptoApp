@@ -240,9 +240,9 @@ export const Main = styled.div<React.CSSProperties>`
     
        p, li {
            margin-top: 15px;
-           margin-left: 2px;
-           font-size: 25px;
+           font-size: 20px;
            padding: 5px;
+           text-align: justify;
        }
 
        ul {
@@ -267,7 +267,7 @@ export const Main = styled.div<React.CSSProperties>`
        }
     
        h1, h2 {
-           font-size: 45px;
+           font-size: 40px;
            font-weight: bold;
            margin: 20px 0px;
        }

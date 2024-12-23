@@ -34,13 +34,14 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   }
   }
 
+/* Big screen */
 @media (min-width: 768px) {
 
   .container {
     height: 300px;
     position: relative;
     width: 100%;
-    height: 360px;
+    height: 330px;
     overflow: hidden;
     border-radius: 10px;
     margin: 20px auto;
@@ -67,7 +68,6 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   }
   
   .container-1 {
-    background-color: #FAFAFA;
     .image {
       height: 100px;
       img {
@@ -81,7 +81,6 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   
 }
 .container-2 {
-  background-color:#FAFAFA;
   .image {
     position: absolute;
     top: 0;
@@ -101,7 +100,6 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
 }
 
 .container-3 {
-  border: none;
   .image {
       position: absolute;
       top: 0;

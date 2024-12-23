@@ -2,8 +2,8 @@ import Header from './components/Header/Header.tsx';
 import { Main } from './components/MainP/styled.ts';
 import grassImgMobile from './assets/img/grassImgMobile.webp';
 import grassImgMobile2 from './assets/img/grass2.webp';
-import grassImgDesk from './assets/img/grassDeskAlt01.png';
-import grassImgDesk2 from './assets/img/GrassDeskAlt02.png';
+import grassImgDesk from './assets/img/desktopNode.jpeg';
+import grassImgDesk2 from './assets/img/grassApp.jpeg';
 import Footer from './components/Footer/Footer.tsx';
 import men01 from './assets/img/men01.jpg';
 import woman01 from './assets/img/pexels-emmy-e-1252107-2381069.jpg';
@@ -14,6 +14,7 @@ import ScrollReveal from './components/Scroll/ScrollReveal.tsx';
 import LineChart from './components/Chart/LineChart.tsx';
 import ParallaxImage from './components/imagesEffects/ParallaxImage.tsx';
 import { useMediaQuery } from 'react-responsive';
+import Post from './components/PostGrass/Post.tsx';
 
 function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 575px) and (max-width: 767px)' });
@@ -30,8 +31,11 @@ function App() {
       return grassImgMobile2;
     } else if (isDesktop && id === 3) {
       return grassImgMobile2;
+    } else if(isMobile && id === 3) {
+      return grassImgDesk;
+    } else {
+      return '';
     }
-    return '';
 }
 
   return (
@@ -39,7 +43,7 @@ function App() {
       <Header />
       <Main><ScrollReveal>
         <h1>Ganhe criptomoedas sem esforço</h1>
-        <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum.</p><br />
+        <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum. Somente compartilhando a sua banda ociosa da internet.</p><br />
         <ParallaxImage
         imageSrc={verifyDisplay(1)}
         altText="Imagem Parallax"
@@ -175,9 +179,20 @@ function App() {
         classNameProp='container-3'
       />
         <ScrollReveal>
-          <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>
+          <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p><br />
         </ScrollReveal>
 
+          <h1>Qual o intuito da Grass?</h1>
+        <ScrollReveal>
+          <p>A seguir, veja o video retirado das redes socias da Grass, que aborda sobre a IA e de como ela deve ser treinada para dar informações corretas. O video ressalta a importância dos treinamentos da Inteligência Artificial (que é o intuito da Grass), e como a informação errada pode trazer confusão:</p>
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Post />
+        </ScrollReveal>
+        <ScrollReveal>
+          <p>O que podemos extrair de aprendizado do video é que uma IA precisa ser bem treinada para evitarmos dor de cabeça tanto no presente, quanto no futuro. O treinamento de uma Inteligência Artificial (IA), envolve um processo longo e duradouro, que a cada dia, deve sempre aperfeiçoar a IA.</p>
+        </ScrollReveal>
         <ScrollReveal>
           <p>Se você ainda não conhece a <strong>Grass</strong>, agora é o momento perfeito para entrar. O token está em plena ascensão, e as oportunidades de ganhos são mais vantajosas do que nunca. A plataforma não apenas oferece uma maneira simples e segura de monetizar sua internet, mas também oferece um token que se valoriza a cada dia, potencializando ainda mais seus lucros.</p>
         </ScrollReveal>
