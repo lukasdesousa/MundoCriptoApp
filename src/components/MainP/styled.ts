@@ -8,13 +8,15 @@ export const Main = styled.div<React.CSSProperties>`
 
 
        ul {
-        list-style: circle;
+        list-style: none;
         padding: 13px;
        }
     
        p, li {
            margin-top: 15px;
            font-size: 13px;
+           text-align: center;
+
        }
     
        p.opn-P, h1.opn-H1 {
@@ -26,10 +28,11 @@ export const Main = styled.div<React.CSSProperties>`
        }
     
        h1, h2 {
-           font-size: 23px;
+           font-size: 20px;
            margin-top: 10px;
            font-weight: bold;
            margin-right: 10px;
+           text-align: center;
        }
     
        button {
@@ -117,6 +120,11 @@ export const Main = styled.div<React.CSSProperties>`
     @media (min-width: 576px) and (max-width: 767px) {
         padding: 7px;
 
+        ul {
+        list-style: inside;
+        padding: 20px;
+       }
+
        img {
            width: 90%;
            display: block;
@@ -127,7 +135,8 @@ export const Main = styled.div<React.CSSProperties>`
        p, li {
            margin-top: 15px;
            margin-left: 2px;
-           font-size: 15px;
+           font-size: 100%;
+           text-align: center;
        }
     
        p.opn-P, h1.opn-H1 {
@@ -143,6 +152,7 @@ export const Main = styled.div<React.CSSProperties>`
            margin-top: 10px;
            font-weight: bold;
            margin-right: 10px;
+           text-align: center;
            
        }
     
@@ -242,7 +252,7 @@ export const Main = styled.div<React.CSSProperties>`
            margin-top: 15px;
            font-size: 20px;
            padding: 5px;
-           text-align: justify;
+           text-align: center;
        }
 
        ul {
@@ -270,6 +280,7 @@ export const Main = styled.div<React.CSSProperties>`
            font-size: 40px;
            font-weight: bold;
            margin: 20px 0px;
+           text-align: center;
        }
     
        button {

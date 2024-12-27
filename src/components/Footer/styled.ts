@@ -66,6 +66,7 @@ export const FooterStyle = styled.footer<React.CSSProperties>`
                 opacity: 0.75;
                 transition: all 0.3s;
                 margin: 10px 0px;
+                text-align: center;
             }
     
             a:hover {

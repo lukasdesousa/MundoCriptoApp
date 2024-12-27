@@ -1,9 +1,5 @@
 import Header from './components/Header/Header.tsx';
 import { Main } from './components/MainP/styled.ts';
-import grassImgMobile from './assets/img/grassImgMobile.webp';
-import grassImgMobile2 from './assets/img/grass2.webp';
-import grassImgDesk from './assets/img/desktopNode.jpeg';
-import grassImgDesk2 from './assets/img/grassApp.jpeg';
 import Footer from './components/Footer/Footer.tsx';
 import men01 from './assets/img/men01.jpg';
 import woman01 from './assets/img/pexels-emmy-e-1252107-2381069.jpg';
@@ -11,33 +7,13 @@ import men02 from './assets/img/men02.jpg';
 import woman02 from './assets/img/woman03.jpg';
 import woman03 from './assets/img/woman04.jpg';
 import ScrollReveal from './components/Scroll/ScrollReveal.tsx';
-import LineChart from './components/Chart/LineChart.tsx';
+import GrassInf from './components/Chart/GrassInf.tsx';
 import ParallaxImage from './components/imagesEffects/ParallaxImage.tsx';
-import { useMediaQuery } from 'react-responsive';
 import Post from './components/PostGrass/Post.tsx';
+import { VerifyDisplay } from './utils/verifyDisplay.ts';
 
 function App() {
-  const isMobile = useMediaQuery({ query: '(max-width: 575px) and (max-width: 767px)' });
-  const isDesktop = useMediaQuery({ query: '(min-width: 768px)' });
-
-  const verifyDisplay = (id: number): string => {
-    if(isMobile && id === 1) {
-      return grassImgMobile
-    } else if(isDesktop && id === 1) {
-      return grassImgDesk;
-    } else if(isDesktop && id === 2) {
-      return grassImgDesk2;
-    } else if (isMobile && id === 2) {
-      return grassImgMobile2;
-    } else if (isDesktop && id === 3) {
-      return grassImgMobile2;
-    } else if(isMobile && id === 3) {
-      return grassImgDesk;
-    } else {
-      return '';
-    }
-}
-
+ 
   return (
     <>
       <Header />
@@ -45,12 +21,12 @@ function App() {
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum. Somente compartilhando a sua banda ociosa da internet.</p><br />
         <ParallaxImage
-        imageSrc={verifyDisplay(1)}
+        imageSrc={VerifyDisplay(1)}
         altText="Imagem Parallax"
         classNameProp='container-1'
       />
         <ScrollReveal>
-        <button>Acessar a Grass</button>
+        <a href="https://app.getgrass.io/register/?referralCode=tu4BPIdwQvUG96c" target='_blank'><button>Acessar a Grass</button></a>
         </ScrollReveal>
       </ScrollReveal>
       
@@ -61,12 +37,18 @@ function App() {
         </ScrollReveal>
         <ScrollReveal>
           <h1>Por que usar a Grass?</h1>
-          <ul>
-            <li>Renda Passiva: Ganhe dinheiro todos os dias com algo que você já tem: sua internet.</li>
-            <li>Simples e Seguro: O processo é fácil, e sua privacidade é nossa prioridade.</li>
-            <li>Ganhos Diários: Com a <strong>Grass</strong>, você pode ganhar até $10 por dia!</li>
-            <li>Sem Complicação: Cadastre-se, conecte-se e comece a ganhar sem esforço.</li>
-          </ul>
+          <ScrollReveal>
+            <p>
+            A Grass oferece uma solução inovadora e vantajosa para quem busca ganhar tokens de forma simples e sem custos, utilizando a largura de banda não utilizada de sua conexão de internet</p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p>Ao instalar a extensão da Grass e compartilhar sua largura de banda não utilizada, você começa a acumular pontos automaticamente. Esses pontos podem ser convertidos em tokens $GRASS, sem que você precise fazer nada além de manter a extensão ativa enquanto navega. Isso transforma a utilização da sua conexão em uma fonte de renda passiva.</p>
+          </ScrollReveal>
+          <ScrollReveal>
+            <p>
+            A plataforma é extremamente fácil de usar. Tudo o que você precisa fazer é se registrar, instalar a extensão no seu navegador e ativar o compartilhamento de largura de banda. Não há complexidade no processo, e você pode começar a ganhar tokens praticamente no momento em que configurar a extensão.
+            </p>
+          </ScrollReveal>
         </ScrollReveal>
         <ScrollReveal>
           <h1 className='opn-H1'>Opniões de investidores</h1>
@@ -133,10 +115,10 @@ function App() {
               <section className='opn'>
                 <div>
                   <section className="text-opn">
-                    <p className='txt-access'><small>"Sensacional, gostei muito!"</small></p>
+                    <p className='txt-access'><small>"Muito bacana!"</small></p>
                   </section>
                   <section className='photo-inv'>
-                    <img src={woman02} alt="" />
+                    <img src={woman02} alt="Mulher de negócios" />
                     <section className='details'>
                       <p className='details-name'><strong>Ana F.</strong></p>
                       <p className='details-desc'>Investment analyst</p>
@@ -149,7 +131,7 @@ function App() {
         </ScrollReveal>
         <ParallaxImage
         classNameProp='container-2'
-        imageSrc={verifyDisplay(2)}
+        imageSrc={VerifyDisplay(2)}
         altText="Imagem Parallax"
       />
         <ScrollReveal>
@@ -170,20 +152,20 @@ function App() {
         <ScrollReveal>
           <h2>O crescimento da Grass</h2>
           <ScrollReveal>
-            <LineChart />
-          </ScrollReveal>
-        </ScrollReveal>
           <ParallaxImage
-        imageSrc={verifyDisplay(3)}
+        imageSrc={VerifyDisplay(3)}
         altText="Imagem Parallax"
         classNameProp='container-3'
       />
+            <GrassInf />
+          </ScrollReveal>
+        </ScrollReveal>
         <ScrollReveal>
-          <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p><br />
+          <p>O token da <strong>Grass</strong> experimentou um crescimento impressionante nos últimos tempos, e esse aumento tem gerado uma enorme expectativa entre os investidores e usuários da plataforma. Com uma valorização consistente, o token se tornou uma das opções mais atraentes no mercado de criptomoedas, e o melhor é que você pode fazer parte desse movimento agora mesmo. </p>
         </ScrollReveal>
 
-          <h1>Qual o intuito da Grass?</h1>
         <ScrollReveal>
+          <h1>Qual o intuito da Grass?</h1>
           <p>A seguir, veja o video retirado das redes socias da Grass, que aborda sobre a IA e de como ela deve ser treinada para dar informações corretas. O video ressalta a importância dos treinamentos da Inteligência Artificial (que é o intuito da Grass), e como a informação errada pode trazer confusão:</p>
         </ScrollReveal>
 

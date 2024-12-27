@@ -9,11 +9,12 @@ export const HeadStyle = styled.div<React.CSSProperties>`
     section {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-between;
+        gap: 30px;
         color: black;
         padding: 15px;
         height: 120px;
+
     }
     
     ul {
@@ -47,8 +48,9 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         font-weight: bold;
         white-space: nowrap;
         position: relative;
-        left: 8px;
+       
         border-bottom: 1px solid #E6E6E6;
+        
     }
 }
 
@@ -57,8 +59,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
     section {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 50px;
+        justify-content: space-between;
         color: black;
         padding: 15px;
         height: 140px;
@@ -81,15 +82,20 @@ export const HeadStyle = styled.div<React.CSSProperties>`
                 font-size: 15px;
                 border: none;
             }
+
+            a {
+                color: unset;
+                text-decoration: none;
+            }
         }
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 200%;
         font-family: inter, Arial, Helvetica, sans-serif;
-        position: relative;
         font-weight: bold;
-        bottom: 5px;
+        position: relative;
+        left: 15px;
     }
 }
 
@@ -98,12 +104,11 @@ export const HeadStyle = styled.div<React.CSSProperties>`
     section {
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: space-between;
         gap: 10px;
         color: black;
         padding: 15px;
-        height: 140px;
-        
+        height: 100px;
     }
 
     ul {
@@ -122,15 +127,20 @@ export const HeadStyle = styled.div<React.CSSProperties>`
                 font-size: 15px;
                 border: none;
             }
+
+            a {
+                color: unset;
+                text-decoration: none;
+            }
         }
     }
 
     h1 {
-        font-size: 35px;
+        font-size: 200%;
         font-family: inter, Arial, Helvetica, sans-serif;
         position: relative;
         bottom: 5px;
-        right: 63%;
+      
         font-weight: bold;
         border-bottom: 1px solid #E6E6E6;
     }
