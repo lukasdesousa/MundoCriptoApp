@@ -10,8 +10,8 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
   .container {
     position: relative;
     width: 100%;
-    height: 200px; /* Altura ajustada para mobile */
-    overflow: hidden; /* Garante que o filho não ultrapasse */
+    height: 200px; 
+    overflow: hidden; 
     border-radius: 10px;
     margin: 20px auto;
   }
@@ -21,8 +21,8 @@ export const ParallaxStyle = styled.div<React.CSSProperties>`
     top: 55%;
     left: 0;
     width: 100%;
-    height: 200px; /* Altura maior que o contêiner para o efeito */
-    will-change: transform; /* Otimização */
+    height: 200px; 
+    will-change: transform; 
     border-radius: 10px;
     
     img {

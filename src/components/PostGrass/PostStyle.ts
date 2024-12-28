@@ -27,7 +27,7 @@ export const StylePost = styled.div<React.CSSProperties>`
         rgba(99, 99, 99, 0.3)
       );
         background-size: 400% 400%;
-        border-radius: 10px; /* Arredondado opcional */
+        border-radius: 10px; 
         animation: holographic-animation 8s ease infinite;
         backdrop-filter: blur(30px);
         opacity: 0.8;
@@ -38,7 +38,7 @@ export const StylePost = styled.div<React.CSSProperties>`
             position: relative;
             width: 300px;
             height: 100%;
-            border-radius: 20px; /* Opcional */
+            border-radius: 20px; 
             z-index: 1;
         }
     
@@ -57,8 +57,8 @@ export const StylePost = styled.div<React.CSSProperties>`
         rgba(255, 255, 255, 0.5)
       );
       z-index: -1;
-      filter: blur(15px); /* Suaviza a sombra */
-      border-radius: 20px; /* Combina com o elemento principal */
+      filter: blur(15px); 
+      border-radius: 20px; 
     }
     
 }

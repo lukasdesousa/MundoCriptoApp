@@ -7,9 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     compression({
-      algorithm: 'brotliCompress', // Ou 'gzip' para Gzip
-      ext: '.br', // Extensão do arquivo comprimido (ou '.gz' para Gzip)
-      threshold: 10240, // Apenas arquivos maiores que 10KB serão comprimidos
+      algorithm: 'brotliCompress', 
+      ext: '.br', 
+      threshold: 10240, 
     }),
   ],
   base: '/MundoCriptoApp',

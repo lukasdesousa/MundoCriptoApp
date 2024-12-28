@@ -7,7 +7,7 @@ interface ScrollRevealProps {
 
 const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef<HTMLDivElement | null>(null); // Correção na tipagem
+  const elementRef = useRef<HTMLDivElement | null>(null); 
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,7 +16,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.05 } // Trigger quando 10% do elemento estiver visível
+      { threshold: 0.05 } 
     );
 
     if (elementRef.current) {
