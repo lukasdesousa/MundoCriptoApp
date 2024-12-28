@@ -6,11 +6,11 @@ export const HeadStyle = styled.div<React.CSSProperties>`
 
 /* Small screen */
 @media (max-width: 575px) {
+
     section {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        gap: 30px;
+        justify-content: space-around;
         color: black;
         padding: 15px;
         height: 120px;
@@ -22,7 +22,8 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         display: flex; 
         align-items: center;
         gap: 12px;
-        width: 90%;
+        position: relative;
+        left: 20px;
 
         li {
             button {
@@ -47,12 +48,10 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         font-size: 20px;
         font-family: inter, Arial, Helvetica, sans-serif;
         font-weight: bold;
-        
-        position: relative;
-       
         border-bottom: 1px solid #E6E6E6;
         
     }
+
 }
 
 /* Medium Screen */
