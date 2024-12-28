@@ -29,7 +29,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
                 background-color: black;
                 color: white;
                 width: 90px;
-                height: 35px;
+                height: 40px;
                 border-radius: 5px;
                 font-size: 15px;
                 border: none;
@@ -38,6 +38,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
             a {
                 color: unset;
                 text-decoration: none;
+                
             }
         }
     }
@@ -46,7 +47,7 @@ export const HeadStyle = styled.div<React.CSSProperties>`
         font-size: 20px;
         font-family: inter, Arial, Helvetica, sans-serif;
         font-weight: bold;
-        white-space: nowrap;
+        
         position: relative;
        
         border-bottom: 1px solid #E6E6E6;

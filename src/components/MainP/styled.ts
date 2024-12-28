@@ -275,9 +275,9 @@ export const Main = styled.div<React.CSSProperties>`
        p.txt-access {
            opacity: 0.85;
        }
-    
+       
        h1, h2 {
-           font-size: 40px;
+           font-size: 30px;
            font-weight: bold;
            margin: 20px 0px;
            text-align: center;
@@ -324,11 +324,16 @@ export const Main = styled.div<React.CSSProperties>`
                    div {
                        display: flex;
                        flex-direction: column;
-                       justify-content: space-around;
+                       justify-content: space-evenly;
                        border-radius: 10px;
                        margin: 10px;
                        flex: 1;
-                       gap: 50px;
+                       gap: 80px;
+                   
+
+                       section.text-opn {
+                        max-height: 20px;
+                       }
                                    
                        p {
                            margin: 0px;
@@ -337,7 +342,10 @@ export const Main = styled.div<React.CSSProperties>`
     
                        section.photo-inv {
                            display: flex;
+                           align-items: center;
+                           justify-content: left;
                            gap: 10px;
+                          
                             
                            img {
                                width: 35px;
@@ -351,7 +359,7 @@ export const Main = styled.div<React.CSSProperties>`
                                flex-direction: column;
                                align-items: start;
                                justify-content: center;
-    
+                               
                                .details-name {
                                    font-family: inter, Arial, Helvetica, sans-serif;
                                    font-size: 12px;

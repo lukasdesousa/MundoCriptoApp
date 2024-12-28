@@ -11,25 +11,29 @@ import GrassInf from './components/Chart/GrassInf.tsx';
 import ParallaxImage from './components/imagesEffects/ParallaxImage.tsx';
 import Post from './components/PostGrass/Post.tsx';
 import { VerifyDisplay } from './utils/verifyDisplay.ts';
+import WarningMedia from './components/Warnings/WarningMedia.tsx';
+import { useMediaQuery } from 'react-responsive';
 
 function App() {
- 
+  const isDesktop = useMediaQuery({ query: '(min-width: 576px)' });
+
   return (
     <>
+      {isDesktop ? <WarningMedia /> : ''}
       <Header />
       <Main><ScrollReveal>
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum. Somente compartilhando a sua banda ociosa da internet.</p><br />
         <ParallaxImage
-        imageSrc={VerifyDisplay(1)}
-        altText="Imagem Parallax"
-        classNameProp='container-1'
-      />
+          imageSrc={VerifyDisplay(1)}
+          altText="Imagem Parallax sobre a Grass"
+          classNameProp='container-1'
+        />
         <ScrollReveal>
-        <a href="https://app.getgrass.io/register/?referralCode=tu4BPIdwQvUG96c" target='_blank'><button>Acessar a Grass</button></a>
+          <a href="https://app.getgrass.io/register/?referralCode=tu4BPIdwQvUG96c" target='_blank'><button>Acessar a Grass</button></a>
         </ScrollReveal>
       </ScrollReveal>
-      
+
         <ScrollReveal>
           <h2>Como funciona?</h2>
           <p className='txt-access'>
@@ -39,14 +43,14 @@ function App() {
           <h1>Por que usar a Grass?</h1>
           <ScrollReveal>
             <p>
-            A Grass oferece uma solução inovadora e vantajosa para quem busca ganhar tokens de forma simples e sem custos, utilizando a largura de banda não utilizada de sua conexão de internet</p>
+              A Grass oferece uma solução inovadora e vantajosa para quem busca ganhar tokens de forma simples e sem custos, utilizando a largura de banda não utilizada de sua conexão de internet</p>
           </ScrollReveal>
           <ScrollReveal>
             <p>Ao instalar a extensão da Grass e compartilhar sua largura de banda não utilizada, você começa a acumular pontos automaticamente. Esses pontos podem ser convertidos em tokens $GRASS, sem que você precise fazer nada além de manter a extensão ativa enquanto navega. Isso transforma a utilização da sua conexão em uma fonte de renda passiva.</p>
           </ScrollReveal>
           <ScrollReveal>
             <p>
-            A plataforma é extremamente fácil de usar. Tudo o que você precisa fazer é se registrar, instalar a extensão no seu navegador e ativar o compartilhamento de largura de banda. Não há complexidade no processo, e você pode começar a ganhar tokens praticamente no momento em que configurar a extensão.
+              A plataforma é extremamente fácil de usar. Tudo o que você precisa fazer é se registrar, instalar a extensão no seu navegador e ativar o compartilhamento de largura de banda. Não há complexidade no processo, e você pode começar a ganhar tokens praticamente no momento em que configurar a extensão.
             </p>
           </ScrollReveal>
         </ScrollReveal>
@@ -130,10 +134,10 @@ function App() {
           </section>
         </ScrollReveal>
         <ParallaxImage
-        classNameProp='container-2'
-        imageSrc={VerifyDisplay(2)}
-        altText="Imagem Parallax"
-      />
+          classNameProp='container-2'
+          imageSrc={VerifyDisplay(2)}
+          altText="Imagem Parallax"
+        />
         <ScrollReveal>
           <h2>Como Funciona a Monetização da Sua Internet?</h2>
           <p>
@@ -152,11 +156,11 @@ function App() {
         <ScrollReveal>
           <h2>O crescimento da Grass</h2>
           <ScrollReveal>
-          <ParallaxImage
-        imageSrc={VerifyDisplay(3)}
-        altText="Imagem Parallax"
-        classNameProp='container-3'
-      />
+            <ParallaxImage
+              imageSrc={VerifyDisplay(3)}
+              altText="Imagem Parallax"
+              classNameProp='container-3'
+            />
             <GrassInf />
           </ScrollReveal>
         </ScrollReveal>

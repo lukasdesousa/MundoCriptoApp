@@ -16,7 +16,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.1 } // Trigger quando 10% do elemento estiver visível
+      { threshold: 0.05 } // Trigger quando 10% do elemento estiver visível
     );
 
     if (elementRef.current) {
@@ -31,7 +31,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({ children }) => {
   }, []);
 
   return (
-    <RevealContent ref={elementRef} isVisible={isVisible}>
+    <RevealContent ref={elementRef} $isVisible={isVisible}>
       {children}
     </RevealContent>
   );
