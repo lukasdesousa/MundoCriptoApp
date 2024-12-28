@@ -4,8 +4,8 @@
 
 ## 🚀 Funcionalidades
 
-### 🔍 **ANALYSER** (AINDA A SER IMPLEMENTADA)
-Uma das funcionalidades principais do **Mundo Cripto** é a ferramenta **ANALYSER**. Com ela, será possível:
+### 🔍 **ANALISER** (AINDA A SER IMPLEMENTADA)
+Uma das funcionalidades principais do **Mundo Cripto** é a ferramenta **ANALISER**. Com ela, será possível:
 - **Identificar rug pulls (golpes)** em criptomoedas apenas com o endereço de contrato do token.
 - A ferramenta vai analisar a segurança do projeto de forma rápida, ajudando os investidores a se protegerem de fraudes no mercado cripto.
 
@@ -21,7 +21,7 @@ Uma das funcionalidades principais do **Mundo Cripto** é a ferramenta **ANALYSE
 O principal objetivo deste projeto é fornecer uma plataforma simples, mas poderosa, para ajudar tanto iniciantes quanto veteranos no mercado de criptomoedas. Além disso, buscamos combater os golpes no mercado cripto, tornando o ambiente mais seguro e transparente.
 
 ## 📈 Status
-Este projeto está em desenvolvimento, mas já está tomando forma! A **função ANALYSER** está em construção e em breve estará disponível para uso.
+Este projeto está em desenvolvimento, mas já está tomando forma! A **função ANALISER** está em construção e em breve estará disponível para uso.
 
 ## 📄 Licença
 
