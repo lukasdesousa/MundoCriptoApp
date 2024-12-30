@@ -203,6 +203,7 @@ Error generating stack: `+a.message+`
            margin-top: 15px;
            font-size: 13px;
            text-align: justify;
+           padding: 5px;
 
        }
     
@@ -256,6 +257,7 @@ Error generating stack: `+a.message+`
                        font-family: inter, Arial, Helvetica, sans-serif;
                        font-weight: bold;
                        opacity: 1;
+                       
                    }
     
                    div {
@@ -268,6 +270,7 @@ Error generating stack: `+a.message+`
                        p {
                            margin: 0px;
                            text-align: center;
+                           padding: 2px;
                        }
     
                        section.photo-inv {
