@@ -202,7 +202,7 @@ Error generating stack: `+a.message+`
        p, li {
            margin-top: 15px;
            font-size: 13px;
-           text-align: center;
+           text-align: justify;
 
        }
     
@@ -323,7 +323,7 @@ Error generating stack: `+a.message+`
            margin-top: 15px;
            margin-left: 2px;
            font-size: 100%;
-           text-align: center;
+           text-align: justify;
        }
     
        p.opn-P, h1.opn-H1 {
