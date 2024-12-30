@@ -15,7 +15,7 @@ export const Main = styled.div<React.CSSProperties>`
        p, li {
            margin-top: 15px;
            font-size: 13px;
-           text-align: center;
+           text-align: justify;
 
        }
     
@@ -136,7 +136,7 @@ export const Main = styled.div<React.CSSProperties>`
            margin-top: 15px;
            margin-left: 2px;
            font-size: 100%;
-           text-align: center;
+           text-align: justify;
        }
     
        p.opn-P, h1.opn-H1 {
@@ -252,7 +252,7 @@ export const Main = styled.div<React.CSSProperties>`
            margin-top: 15px;
            font-size: 20px;
            padding: 5px;
-           text-align: center;
+           text-align: justify;
        }
 
        ul {
