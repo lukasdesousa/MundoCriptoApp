@@ -1,23 +1,27 @@
 import React from "react";
-import { HeadStyle } from "./styled";
-import ScrollReveal from "../Scroll/ScrollReveal";
+import { HeadAnalyserStyle } from "./styled";
+import ScrollReveal from "../../../components/Scroll/ScrollReveal";
 
 
 const Header: React.FC = () => {
     return <>
-        <HeadStyle>
+        <HeadAnalyserStyle>
             <ScrollReveal>
                 <section className="main">
-                    <h1>Mundo Cripto</h1>
+                    <section className="title">
+                        <h1>Mundo Cripto <br />
+                        </h1>
+                        <p className="sub-title">Analyser</p>
+                    </section>
                     <section>
                         <ul>
-                            <li><a href="/MundoCriptoApp/analiserTool">Analiser</a></li>
+                            <li><a href="/MundoCriptoApp">Home</a></li>
                             <li><a href="https://www.linkedin.com/in/lukasdesouza/" target="_blank"><button>LinkedIn</button></a></li>
                         </ul>
                     </section>
                 </section>
             </ScrollReveal>
-        </HeadStyle>
+        </HeadAnalyserStyle>
     </>
 }
 

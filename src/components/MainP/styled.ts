@@ -16,6 +16,7 @@ export const Main = styled.div<React.CSSProperties>`
            margin-top: 15px;
            font-size: 13px;
            text-align: justify;
+           padding: 10px;
 
        }
     
@@ -69,6 +70,7 @@ export const Main = styled.div<React.CSSProperties>`
                        font-family: inter, Arial, Helvetica, sans-serif;
                        font-weight: bold;
                        opacity: 1;
+                       
                    }
     
                    div {
@@ -81,6 +83,7 @@ export const Main = styled.div<React.CSSProperties>`
                        p {
                            margin: 0px;
                            text-align: center;
+                           padding: 2px;
                        }
     
                        section.photo-inv {
