@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <Routes>
       <Route path={'/MundoCriptoApp'} element={<Home />} />
-      <Route path='/MundoCriptoApp/analiserTool' element={<Analiser />} />
+      <Route path={'/MundoCriptoApp/analyserTool'} element={<Analiser />} />
     </Routes>
   );
 };

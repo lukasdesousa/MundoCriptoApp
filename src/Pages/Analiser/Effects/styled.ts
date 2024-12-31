@@ -10,6 +10,9 @@ export const TypingStyle = styled.div<React.CSSProperties>`
     max-height: 100px;
 
     p {
-        opacity: 0.7;
+        opacity: 1;
+        font-size: 70%;
+        text-align: center;
+
     }
 `;

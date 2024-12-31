@@ -10,12 +10,13 @@ export const TypedDescription: React.FC = () => {
       const typed = new Typed(typedElement.current, {
         strings: [
           'Uma ferramenta capaz de prever golpes (RUG-PULLS) em criptomoedas.',
-          'Com uma análise complexa, essa ferramenta é capaz de identificar projetos fraudulentos.'
+          'Com uma análise complexa, essa ferramenta é capaz de identificar projetos fraudulentos.',
+          'A ferramente ANALYSER será capaz de fornecer previsões altamente complexas baseadas no histórico do mercado.'
         ],
         typeSpeed: 20,
         backSpeed: 10,
         loop: true,
-        backDelay: 2000,
+        backDelay: 3000,
         showCursor: true,
       });
 
