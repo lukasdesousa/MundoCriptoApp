@@ -7,7 +7,9 @@ const WarningMedia: React.FC = () => {
     return <>
         <WarningStyle>
             <section>
-                <MdWarning />
+                <div>
+                    <MdWarning />
+                </div>
                 <p>Essa aplicação ainda está sendo atualizada e adaptada para telas maiores</p>
             </section>
         </WarningStyle>

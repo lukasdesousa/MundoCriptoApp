@@ -14,6 +14,7 @@ export const StylePost = styled.div<React.CSSProperties>`
         background-position: 0% 50%;
       }
     }
+    
         width: 90%;
         display: flex;
         justify-content: center;

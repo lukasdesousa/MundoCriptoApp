@@ -9,12 +9,16 @@ export const WarningStyle = styled.div<React.CSSProperties>`
     margin: 10px auto;
     text-align: center;
     border-bottom: 2px solid #e6e6e6;
-    padding-bottom: 10px;
     
     section {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 5px;
+
+        div {
+            position: relative;
+            bottom: 10px;
+        }
     }
 `;

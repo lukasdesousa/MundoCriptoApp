@@ -170,6 +170,8 @@ p.information {
 }
 
 section.social-media {
+    
+    
     img {
         width: 25px;
         margin-right: 35px;
@@ -189,24 +191,26 @@ section.details-footer {
     p {
         margin-right: 6px;
         text-align: left;
+        
     }
 }
 
 section.links {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-size: 12px;
-    width: 100%;
+    gap: 10px;
+    align-items: center;
+   
+    width: 50%;
     border-left: 1px solid #E6E6E6;
+    
     
     a, p {
         color: black;
-        position: relative;
-        left: 5px;
         opacity: 0.75;
         transition: all 0.3s;
         margin: 10px 0px;
+        font-size: 15px;
     }
 
     a:hover {

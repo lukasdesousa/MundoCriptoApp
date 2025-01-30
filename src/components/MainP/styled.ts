@@ -2,6 +2,16 @@ import styled from "styled-components";
 
 export const Main = styled.main<React.CSSProperties>`
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+    section.card-container {
+        border-bottom: 1px solid #E6E6E6;
+        margin-bottom: 15px;
+    }
+
+    section.tools {
+        border-bottom: 1px solid #E6E6E6;
+        padding: 20px;
+    }
     
 
     @media (max-width: 575px) {
@@ -245,6 +255,14 @@ export const Main = styled.main<React.CSSProperties>`
     @media (min-width: 768px) {
         padding: 10px;
 
+        section.week-videos {
+        border-bottom: 1px solid  #e6e6e6;
+
+        p {
+            padding: 0px 180px;
+        }
+    }
+
        .img {
            width: 100%;
            display: block;
@@ -257,6 +275,13 @@ export const Main = styled.main<React.CSSProperties>`
            font-size: 20px;
            padding: 5px;
            text-align: justify;
+       }
+
+       .main-texts {
+        p {
+            padding: 0px 100px;
+            text-align: center;
+        }
        }
 
        ul {

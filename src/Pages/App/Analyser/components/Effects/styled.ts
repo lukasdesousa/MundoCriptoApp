@@ -16,3 +16,4 @@ export const TypingStyle = styled.div<React.CSSProperties>`
 
     }
 `;
+

@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 export const Section = styled.section<React.CSSProperties>`
-  position: relative; /* Necessário para colocar a camada branca por cima */
+  position: relative;
   margin: 10px auto;
   width: 100%;
   height: 200px;
   border-radius: 10px;
   background: linear-gradient(45deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.3), rgba(0, 255, 0, 0.5));
-  background-size: 300% 300%;  /* Expande o gradiente para mais cobertura */
-  animation: backgroundAnimation 10s ease infinite; /* Animação que altera o fundo */
+  background-size: 300% 300%; 
+  animation: backgroundAnimation 10s ease infinite; 
   border: 2px solid #e6e6e6;
 
-  /* Camada branca semi-transparente */
   ::before {
     content: "";
     position: absolute;
@@ -19,13 +18,12 @@ export const Section = styled.section<React.CSSProperties>`
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.3); /* Camada branca transparente */
-    z-index: 1; /* Coloca a camada branca acima do fundo, mas abaixo do conteúdo */
-    mix-blend-mode: overlay; /* Faz a camada branca interagir com o gradiente */
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: 1; 
+    mix-blend-mode: overlay; 
     border-radius: 9px;
   }
 
-  /* Animação do fundo */
   @keyframes backgroundAnimation {
     0% {
       background-position: 0% 50%;
@@ -38,4 +36,3 @@ export const Section = styled.section<React.CSSProperties>`
     }
   }
 `;
-

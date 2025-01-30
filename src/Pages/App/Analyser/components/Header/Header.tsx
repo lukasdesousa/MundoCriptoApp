@@ -1,6 +1,6 @@
 import React from "react";
 import { HeadAnalyserStyle } from "./styled";
-import ScrollReveal from "../../../components/Scroll/ScrollReveal";
+import ScrollReveal from "../../../../../components/Scroll/ScrollReveal";
 import { Link } from "react-router-dom";
 
 
@@ -10,8 +10,7 @@ const Header: React.FC = () => {
             <ScrollReveal>
                 <section className="main">
                     <section className="title">
-                        <h1>Mundo Cripto <br />
-                        </h1>
+                        <h1>Mundo Cripto</h1>
                         <p className="sub-title">Analyser</p>
                     </section>
                     <section>

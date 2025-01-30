@@ -9,17 +9,17 @@ const Footer: React.FC = () => {
                     <section className="details-footer">
                         <section>
                             <p className="footer-tittle">Mundo cripto</p>
-                            <p className="information">Quaisquer informações que foram repassadas aqui podem ser encontradas no site oficial da Grass. Sempre verifique as informações de que desconfia. Recomendamos que não conecte sua carteira principal de criptomoedas (caso tenha) para evitar qualquer problema que possa ocorrer e também como um meio de se proteger, mesmo a instituição sendo confiável.</p>
+                            <p className="information">A nossa missão é repassar informações úteis e verídicas. Sempre analisando com cautela. Este site é exclusivamente informativo, comprometido com a imparcialidade, a transparência e a entrega de conteúdos livres de influências políticas ou ideológicas, oferecendo informações baseadas em fatos para que você forme suas próprias opiniões com autonomia e confiança. </p>
                         </section>
                         <section className="links">
-                            <p><a href="https://coinmarketcap.com/">Mercado</a></p>
-                            <p><a href="https://coinmarketcap.com/">Token Grass</a></p>
-                            <p><a href="https://coinmarketcap.com/">Saiba mais</a></p>
+                            <p><a href="https://github.com/lukasdesousa/MundoCriptoApp">GitHub</a></p>
+                            <p><a href=""></a></p>
+                            <p><a href="https://github.com/lukasdesousa/MundoCriptoApp">Saiba mais</a></p>
                         </section>
                     </section>
                     <section className="social-media">
-                        <a href=""><img src='https://cdn-icons-png.flaticon.com/128/25/25320.png' alt="Icone do LinkedIn" /></a>
-                        <a href=""><img src='https://cdn-icons-png.flaticon.com/128/3938/3938052.png' alt="Icone do instagram" /></a>
+                        <a href="www.linkedin.com/in/lukasdesouza" target="_blank"><img src='https://cdn-icons-png.flaticon.com/128/25/25320.png' alt="Icone do LinkedIn" /></a>
+                        <a href="https://github.com/lukasdesousa/MundoCriptoApp" target="_blank"><img src='https://cdn-icons-png.flaticon.com/128/25/25657.png' alt="Icone do instagram" /></a>
                     </section>
                 </footer>
         </ScrollReveal>

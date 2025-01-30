@@ -1,16 +1,11 @@
 import styled from "styled-components";
 
-export const HeadAnalyserStyle = styled.div<React.CSSProperties>`
+export const HeadStyle = styled.header<React.CSSProperties>`
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-
-
 /* Small screen */
 @media (max-width: 575px) {
-    font-family:  Helvetica, sans-serif;
 
     section {
         display: flex;
@@ -21,22 +16,6 @@ export const HeadAnalyserStyle = styled.div<React.CSSProperties>`
         height: 120px;
 
     }
-
-    section.title {
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0px;
-        height: 10px;
-        
-        
-    }
-
-    .sub-title {
-        opacity: 0.5;
-        font-family: 'Fira Code', monospace;
-    }
     
     ul {
         list-style: none;
@@ -45,6 +24,7 @@ export const HeadAnalyserStyle = styled.div<React.CSSProperties>`
         gap: 12px;
         position: relative;
         left: 20px;
+        
 
         li {
             button {
@@ -60,17 +40,18 @@ export const HeadAnalyserStyle = styled.div<React.CSSProperties>`
             a {
                 color: unset;
                 text-decoration: none;
-                
+                font-size: 15px;
             }
         }
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 15px;
         font-family: inter, Arial, Helvetica, sans-serif;
         font-weight: bold;
         border-bottom: 1px solid #E6E6E6;
-        
+        position: relative;
+        bottom: 3px;
     }
 
 }

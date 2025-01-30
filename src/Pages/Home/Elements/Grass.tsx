@@ -1,26 +1,26 @@
-import Header from '../../components/Header/Header.tsx';
-import { Main } from '../../components/MainP/styled.ts';
-import Footer from '../../components/Footer/Footer.tsx';
-import men01 from '../../assets/img/men01.jpg';
-import woman01 from '../../assets/img/pexels-emmy-e-1252107-2381069.jpg';
-import men02 from '../../assets/img/men02.jpg';
-import woman02 from '../../assets/img/woman03.jpg';
-import woman03 from '../../assets/img/woman04.jpg';
-import ScrollReveal from '../../components/Scroll/ScrollReveal.tsx';
-import GrassInf from '../../components/Chart/GrassInf.tsx';
-import ParallaxImage from '../../components/imagesEffects/ParallaxImage.tsx';
-import Post from '../../components/PostGrass/Post.tsx';
-import { VerifyDisplay } from '../../utils/verifyDisplay.ts';
-import WarningMedia from '../../components/Warnings/WarningMedia.tsx';
+import { Main } from '../../../components/MainP/styled.ts';
+import Footer from '../../../components/Footer/Footer.tsx';
+import men01 from '../../../assets/img/men01.jpg';
+import woman01 from '../../../assets/img/pexels-emmy-e-1252107-2381069.jpg';
+import men02 from '../../../assets/img/men02.jpg';
+import woman02 from '../../../assets/img/woman03.jpg';
+import woman03 from '../../../assets/img/woman04.jpg';
+import ScrollReveal from '../../../components/Scroll/ScrollReveal.tsx';
+import GrassInf from '../../../components/Chart/GrassInf.tsx';
+import ParallaxImage from '../../../components/imagesEffects/ParallaxImage.tsx';
+import Post from './PostGrass/Post.tsx';
+import { VerifyDisplay } from '../../../utils/verifyDisplay.ts';
+import WarningMedia from '../../../components/Warnings/WarningMedia.tsx';
 import { useMediaQuery } from 'react-responsive';
+import HeaderGrass from './Header/HeaderGrass.tsx';
 
-function App() {
+function Grass() {
   const isDesktop = useMediaQuery({ query: '(min-width: 576px)' });
 
   return (
     <>
       {isDesktop ? <WarningMedia /> : ''}
-      <Header />
+      <HeaderGrass />
       <Main><ScrollReveal>
         <h1>Ganhe criptomoedas sem esforço</h1>
         <p className='txt-access'>Como a GRASS pode te ajudar a conquistar uma renda passiva sem a esforço algum. Somente compartilhando a sua banda ociosa da internet.</p><br />
@@ -196,4 +196,4 @@ function App() {
   )
 }
 
-export default App;
+export default Grass;

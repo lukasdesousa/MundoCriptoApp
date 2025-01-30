@@ -1,13 +1,14 @@
-import Header from './Header/Header.tsx';
-import { Main } from '../../components/MainP/styled.ts';
-import Footer from '../../components/Footer/Footer.tsx';
-import ScrollReveal from '../../components/Scroll/ScrollReveal.tsx';
-import WarningMedia from '../../components/Warnings/WarningMedia.tsx';
+import Header from './components/Header/Header.tsx';
+import { Main } from '../../../components/MainP/styled.ts';
+import Footer from '../../../components/Footer/Footer.tsx';
+import ScrollReveal from '../../../components/Scroll/ScrollReveal.tsx';
+import WarningMedia from '../../../components/Warnings/WarningMedia.tsx';
 import { useMediaQuery } from 'react-responsive';
-import { TypedDescription } from './Effects/TypingEffect.tsx'
-import { Section } from './MainStyle/styled.ts';
+import { TypedDescription } from './components/Effects/TypingEffect.tsx'
+import { Section } from './components/MainStyle/styled.ts';
 
-export function Analiser() {
+
+export function Analyser() {
   const isDesktop = useMediaQuery({ query: '(min-width: 576px)' });
 
   return (
@@ -27,4 +28,4 @@ export function Analiser() {
   )
 }
 
-export default Analiser;
+export default Analyser;
