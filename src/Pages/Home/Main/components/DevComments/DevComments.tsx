@@ -18,15 +18,15 @@ import { DevcommStyle } from './styled';
 import { useMediaQuery } from 'react-responsive';
 
 export default function DevComm() {
-  const isDesktop = useMediaQuery({ query: '(min-width: 576px)' });
+  const isDesktop = useMediaQuery({ query: '(min-width: 650px)' });
 
   return (
     <DevcommStyle>
       <Card
         variant="outlined"
         sx={{
-          width: isDesktop ? 580 : 320,
-          minWidth: isDesktop ? 580 : 320,
+          width: isDesktop ? 600 : 320,
+          minWidth: isDesktop ? 600 : 320,
           overflow: 'auto',
           resize: 'horizontal',
         }}

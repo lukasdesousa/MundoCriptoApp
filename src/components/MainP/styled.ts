@@ -131,7 +131,7 @@ export const Main = styled.main<React.CSSProperties>`
            }
     }
     
-    @media (min-width: 576px) and (max-width: 767px) {
+    @media (min-width: 576px) and (max-width: 1000px) {
         padding: 7px;
 
         ul {
@@ -178,6 +178,13 @@ export const Main = styled.main<React.CSSProperties>`
            border-radius: 5px;
            font-size: 15px;
            border: none;
+       }
+
+       .main-texts {
+        p {
+            padding: 0px 100px;
+            text-align: center;
+        }
        }
     
        section.opn-inv {
@@ -252,7 +259,7 @@ export const Main = styled.main<React.CSSProperties>`
            }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1000px) {
         padding: 10px;
 
         section.week-videos {

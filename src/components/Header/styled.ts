@@ -102,7 +102,7 @@ export const HeadStyle = styled.header<React.CSSProperties>`
 }
 
 /* Big Screen */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     section {
         display: flex;
         align-items: center;

@@ -77,7 +77,7 @@ export const FooterStyle = styled.footer<React.CSSProperties>`
 }
 
 /* Medium Screen CSS */
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 575px) and (max-width: 1000px) {
 
 padding: 15px;
 background: transparent;
@@ -124,11 +124,12 @@ section.details-footer {
 
 section.links {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 12px;
     width: 100%;
     border-left: 1px solid #E6E6E6;
+    gap: 10px;
     
     a, p {
         color: black;
@@ -147,7 +148,7 @@ section.links {
 }
 
 /* Big Screen CSS */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 
 padding: 15px;
 background: transparent;

@@ -8,11 +8,11 @@ const Card: React.FC = () => {
   return (
     <CardStyle>
        <Link to={'/MundoCriptoApp/grass'}>
-         <div className="card text-bg-dark">
+         <div className="card">
                <img src={grassBanner} className="card-img" alt="Card image" />
                <div className="card-img-overlay">
           <h5 className="card-title text-dark">Grass Airdrop</h5>
-          <p className="sub-tittle card-text ">
+          <p className="sub-tittle card-text">
             Aprenda como ganhar criptomoedas enquanto trabalha, estuda ou apenas se diverte. Com a grass, isso é totalmente possível!
           </p>
           <p className="card-text text-dark">
