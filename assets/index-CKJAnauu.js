@@ -223,6 +223,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
             position: relative;
             bottom: 5px;
             font-size: 12px;
+            padding: 10px;
         }
     }
 
@@ -242,6 +243,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
                 font-size: 15px;
                 text-align: left;
                 font-family: 'Source Code Pro', poppins, Arial, Helvetica, sans-serif;
+                padding: 10px;
             }
 
             h2 {
@@ -306,23 +308,30 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
            margin-top: 15px;
            font-size: 13px;
            text-align: left;
-           padding: 10px;
-
+           padding: 20px;
        }
     
        p.opn-P, h1.opn-H1 {
-           text-align: center;
+           text-align: left;
        }
     
        p.txt-access {
            opacity: 0.85;
        }
+
+       section.week-videos {
+        border-bottom: 1px solid  #e6e6e6;
+        p {
+            padding: 0px 10px;
+        }
+       }
+       
     
        h1, h2 {
            font-size: 20px;
            margin-top: 10px;
            font-weight: bold;
-           margin-right: 10px;
+           
            text-align: center;
        }
     
@@ -429,7 +438,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
            margin-top: 15px;
            margin-left: 2px;
            font-size: 100%;
-           text-align: left;
+           text-align: justify;
        }
     
        p.opn-P, h1.opn-H1 {
@@ -953,6 +962,7 @@ margin: 30px auto;
             text-align: left;
             font-size: 12px;
             color: black;
+            padding: 10px;
         }
     
         .card {
@@ -963,7 +973,7 @@ margin: 30px auto;
             background-color: white;
             border-radius: 10px;
         }
-    
+        
 }
 
     @media (min-width: 578px) and (max-width: 999px) {
@@ -1111,7 +1121,7 @@ export default theme;`}function Hf(e={},...t){const{breakpoints:n,mixins:i={},sp
         font-size: 15px;
     }
 }
-`;function TA(){const e=Ji({query:"(min-width: 650px)"});return P.jsx(PA,{children:P.jsxs(TT,{variant:"outlined",sx:{width:e?600:320,minWidth:e?600:320,overflow:"auto",resize:"horizontal"},children:[P.jsx("section",{className:"dev-comm",children:P.jsx("p",{className:"dev-comment-warning",children:"Comentários do desenvolvedor"})}),P.jsxs(ZP,{sx:{display:"flex",justifyContent:"space-between",alignItems:"center"},children:[P.jsx(ts,{src:EA,size:"lg"}),P.jsxs(GP,{size:"sm",sx:{"--Avatar-size":"28px"},children:[P.jsx(ts,{src:bA}),P.jsx(ts,{src:CA}),P.jsx(ts,{src:kA}),P.jsx(ts,{children:"+4K"})]})]}),P.jsxs(OT,{children:[P.jsx(Lf,{level:"title-lg",children:"Lukas De Souza"}),P.jsxs(Lf,{level:"body-sm",children:["Olá! Seja muito bem-vindo(a) ao ",P.jsx("em",{children:"Mundo Cripto!"})," Como vai o seu dia?"]})]}),P.jsxs(VT,{buttonFlex:"0 1 120px",children:[P.jsx(K1,{variant:"outlined",sx:{mr:"auto","&:active":{color:"pink"}},children:P.jsx(SA,{})}),P.jsx(W1,{variant:"soft",color:"neutral",children:P.jsx($A,{})})]})]})})}function _A(){const e=Ji({query:"(min-width: 576px)"});return P.jsxs(P.Fragment,{children:[e?P.jsx(pp,{}):"",P.jsx(C2,{}),P.jsxs(dp,{children:[P.jsxs(Te,{children:[P.jsx("h1",{children:"Conteúdos Recentes"}),P.jsx("section",{className:"card-container",children:P.jsx(GE,{})})]}),P.jsxs("section",{className:"main-texts",children:[P.jsxs(Te,{children:[P.jsxs("section",{className:"tools",children:[P.jsx("h2",{children:"Ferramentas Mundo Cripto"}),P.jsx("p",{className:"txt-access",children:"Ferramentas no portal Mundo Cripto são aprimoradas constatemente, com o intuito de melhorar a experiência do usuário. Essa área da Mundo Cripto ainda está em desenvolvimento, estamos aperfeiçoando antes de qualquer interação com o público."}),P.jsx($2,{})]}),P.jsx("br",{})]}),P.jsxs(Te,{children:[P.jsx("h1",{children:"Vídeos mais acessados da semana:"}),P.jsx(Te,{children:P.jsx("p",{children:"As recomendações de vídeos da semana são retiradas de uma análise feita por IA e inserida manualmente no portal. Todos os vídeos são cuidadosamente selecionados."})}),P.jsx(BE,{}),P.jsx(Te,{children:P.jsx("section",{className:"week-videos",children:P.jsx("p",{children:"Será selecionado vídeos que estão sendo mais comentados dentro do youtube e inserido aqui no portal. Vídeos onde repassem informações verdadeiras e de fontes confiáveis."})})})]}),P.jsxs(Te,{children:[P.jsx("h2",{children:"Posts interessantes"}),P.jsxs("p",{children:["A seleção de posts ",P.jsx("strong",{children:"interessantes"})," são baseadas em assuntos do momento que envolvem o mercado cripto. Os posts, assim como os vídeos, são cuidadosamente selecionados antes de serem inseridos no portal."]})]}),P.jsx(Te,{children:P.jsx(HE,{})})]}),P.jsx(TA,{}),P.jsx("section",{className:"main-texts",children:P.jsxs("p",{children:["Outras áreas dentro do portal ",P.jsx("em",{children:"Mundo Cripto"})," ainda estão sendo desenvolvidas. Você pode seguir o Dev no ",P.jsx("a",{href:"www.linkedin.com/in/lukasdesouza",children:"LinkedIn"})," para ficar por dentro de qualquer novidade e futuras melhorias ;)"]})})]}),P.jsx(fp,{})]})}const AA=_t.div`
+`;function TA(){const e=Ji({query:"(min-width: 650px)"});return P.jsx(PA,{children:P.jsxs(TT,{variant:"outlined",sx:{width:e?600:320,minWidth:e?600:320,overflow:"auto",resize:"horizontal"},children:[P.jsx("section",{className:"dev-comm",children:P.jsx("p",{className:"dev-comment-warning",children:"Comentários do desenvolvedor"})}),P.jsxs(ZP,{sx:{display:"flex",justifyContent:"space-between",alignItems:"center"},children:[P.jsx(ts,{src:EA,size:"lg"}),P.jsxs(GP,{size:"sm",sx:{"--Avatar-size":"28px"},children:[P.jsx(ts,{src:bA}),P.jsx(ts,{src:CA}),P.jsx(ts,{src:kA}),P.jsx(ts,{children:"+4K"})]})]}),P.jsxs(OT,{children:[P.jsx(Lf,{level:"title-lg",children:"Lukas De Souza"}),P.jsxs(Lf,{level:"body-sm",children:["Olá! Seja muito bem-vindo(a) ao ",P.jsx("em",{children:"Mundo Cripto!"})," Como vai o seu dia?"]})]}),P.jsxs(VT,{buttonFlex:"0 1 120px",children:[P.jsx(K1,{variant:"outlined",sx:{mr:"auto","&:active":{color:"pink"}},children:P.jsx(SA,{})}),P.jsx(W1,{variant:"soft",color:"neutral",children:P.jsx($A,{})})]})]})})}function _A(){const e=Ji({query:"(min-width: 576px)"});return P.jsxs(P.Fragment,{children:[e?P.jsx(pp,{}):"",P.jsx(C2,{}),P.jsxs(dp,{children:[P.jsxs(Te,{children:[P.jsx("h1",{children:"Conteúdos Recentes"}),P.jsx("section",{className:"card-container",children:P.jsx(GE,{})})]}),P.jsxs("section",{className:"main-texts",children:[P.jsxs(Te,{children:[P.jsxs("section",{className:"tools",children:[P.jsx("h2",{children:"Ferramentas Mundo Cripto"}),P.jsx("p",{className:"txt-access",children:"Ferramentas no portal Mundo Cripto são aprimoradas constatemente, com o intuito de melhorar a experiência do usuário. Essa área da Mundo Cripto ainda está em desenvolvimento, estamos aperfeiçoando antes de qualquer interação com o público."}),P.jsx($2,{})]}),P.jsx("br",{})]}),P.jsxs(Te,{children:[P.jsx("h1",{children:"Vídeos mais acessados da semana:"}),P.jsx(Te,{children:P.jsx("p",{className:"txt-access",children:"As recomendações de vídeos da semana são retiradas de uma análise feita por IA e inserida manualmente no portal. Todos os vídeos são cuidadosamente selecionados."})}),P.jsx(BE,{}),P.jsx(Te,{children:P.jsx("section",{className:"week-videos",children:P.jsx("p",{children:"Será selecionado vídeos que estão sendo mais comentados dentro do youtube e inserido aqui no portal. Vídeos onde repassem informações verdadeiras e de fontes confiáveis."})})})]}),P.jsxs(Te,{children:[P.jsx("h2",{children:"Posts interessantes"}),P.jsxs("p",{children:["A seleção de posts ",P.jsx("strong",{children:"interessantes"})," são baseadas em assuntos do momento que envolvem o mercado cripto. Os posts, assim como os vídeos, são cuidadosamente selecionados antes de serem inseridos no portal."]})]}),P.jsx(Te,{children:P.jsx(HE,{})})]}),P.jsx(TA,{}),P.jsx("section",{className:"main-texts",children:P.jsxs("p",{children:["Outras áreas dentro do portal ",P.jsx("em",{children:"Mundo Cripto"})," ainda estão sendo desenvolvidas. Você pode seguir o Dev no ",P.jsx("a",{href:"www.linkedin.com/in/lukasdesouza",children:"LinkedIn"})," para ficar por dentro de qualquer novidade e futuras melhorias ;)"]})})]}),P.jsx(fp,{})]})}const AA=_t.div`
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
