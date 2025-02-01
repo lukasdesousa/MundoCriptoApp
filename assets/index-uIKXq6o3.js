@@ -331,7 +331,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
            font-size: 20px;
            margin-top: 10px;
            font-weight: bold;
-           
+           padding: 0px 10px;
            text-align: center;
        }
     
