@@ -10,7 +10,7 @@ export const Main = styled.main<React.CSSProperties>`
 
     section.tools {
         border-bottom: 1px solid #E6E6E6;
-        padding: 20px;
+        padding: 17px;
     }
     
 
@@ -26,8 +26,8 @@ export const Main = styled.main<React.CSSProperties>`
        p, li {
            margin-top: 15px;
            font-size: 13px;
-           text-align: left;
-           padding: 20px;
+           text-align: justify;
+           padding: 10px;
        }
     
        p.opn-P, h1.opn-H1 {
