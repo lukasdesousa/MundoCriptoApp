@@ -27,23 +27,30 @@ export const Main = styled.main<React.CSSProperties>`
            margin-top: 15px;
            font-size: 13px;
            text-align: left;
-           padding: 10px;
-
+           padding: 20px;
        }
     
        p.opn-P, h1.opn-H1 {
-           text-align: center;
+           text-align: left;
        }
     
        p.txt-access {
            opacity: 0.85;
        }
+
+       section.week-videos {
+        border-bottom: 1px solid  #e6e6e6;
+        p {
+            padding: 0px 10px;
+        }
+       }
+       
     
        h1, h2 {
            font-size: 20px;
            margin-top: 10px;
            font-weight: bold;
-           margin-right: 10px;
+           
            text-align: center;
        }
     
@@ -150,7 +157,7 @@ export const Main = styled.main<React.CSSProperties>`
            margin-top: 15px;
            margin-left: 2px;
            font-size: 100%;
-           text-align: left;
+           text-align: justify;
        }
     
        p.opn-P, h1.opn-H1 {

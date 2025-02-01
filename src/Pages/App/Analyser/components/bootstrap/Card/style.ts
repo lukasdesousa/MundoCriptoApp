@@ -13,6 +13,7 @@ margin: 30px auto;
             text-align: left;
             font-size: 12px;
             color: black;
+            padding: 10px;
         }
     
         .card {
@@ -23,7 +24,7 @@ margin: 30px auto;
             background-color: white;
             border-radius: 10px;
         }
-    
+        
 }
 
     @media (min-width: 578px) and (max-width: 999px) {

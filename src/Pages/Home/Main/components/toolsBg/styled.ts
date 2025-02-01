@@ -24,6 +24,7 @@ export const ContainerTools = styled.section<React.CSSProperties>`
             position: relative;
             bottom: 5px;
             font-size: 12px;
+            padding: 10px;
         }
     }
 
@@ -43,6 +44,7 @@ export const ContainerTools = styled.section<React.CSSProperties>`
                 font-size: 15px;
                 text-align: left;
                 font-family: 'Source Code Pro', poppins, Arial, Helvetica, sans-serif;
+                padding: 10px;
             }
 
             h2 {

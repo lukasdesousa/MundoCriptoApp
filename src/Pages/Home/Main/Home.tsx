@@ -38,7 +38,7 @@ function App() {
           <ScrollReveal>
             <h1>Vídeos mais acessados da semana:</h1>
             <ScrollReveal>
-              <p>
+              <p className='txt-access'>
                 As recomendações de vídeos da semana são retiradas de uma análise feita por IA e inserida manualmente no portal. Todos os vídeos são cuidadosamente selecionados.</p>
             </ScrollReveal>
             <WeekVideos />
