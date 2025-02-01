@@ -26,7 +26,7 @@ export const Main = styled.main<React.CSSProperties>`
        p, li {
            margin-top: 15px;
            font-size: 13px;
-           text-align: justify;
+           text-align: left;
            padding: 10px;
 
        }
@@ -150,7 +150,7 @@ export const Main = styled.main<React.CSSProperties>`
            margin-top: 15px;
            margin-left: 2px;
            font-size: 100%;
-           text-align: justify;
+           text-align: left;
        }
     
        p.opn-P, h1.opn-H1 {
