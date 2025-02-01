@@ -50,7 +50,7 @@ export const Main = styled.main<React.CSSProperties>`
            font-size: 20px;
            margin-top: 10px;
            font-weight: bold;
-           
+           padding: 0px 10px;
            text-align: center;
        }
     
