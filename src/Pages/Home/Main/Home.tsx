@@ -29,7 +29,7 @@ function App() {
             <section className="tools">
             <h2>Ferramentas Mundo Cripto</h2>
             <p className='txt-access'>
-              Ferramentas no portal Mundo Cripto são aprimoradas constatemente, com o intuito de deixar melhorar a experiência do usuário. Essa área da Mundo Cripto ainda está em desenvolvimento, estamos aperfeiçoando antes de qualquer interação com o público.
+              Ferramentas no portal Mundo Cripto são aprimoradas constatemente, com o intuito de melhorar a experiência do usuário. Essa área da Mundo Cripto ainda está em desenvolvimento, estamos aperfeiçoando antes de qualquer interação com o público.
             </p>
               <ToolArea />
             </section>
