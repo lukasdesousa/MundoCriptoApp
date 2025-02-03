@@ -309,6 +309,7 @@ Please change the parent <Route path="${C}"> to <Route path="${C==="/"?"*":`${C}
            font-size: 13px;
            text-align: justify;
            padding: 10px;
+           hyphens: auto;
        }
     
        p.opn-P, h1.opn-H1 {
