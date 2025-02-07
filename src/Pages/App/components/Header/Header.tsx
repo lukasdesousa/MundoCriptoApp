@@ -1,6 +1,6 @@
 import React from "react";
 import { HeadAnalyserStyle } from "./styled";
-import ScrollReveal from "../../../../../components/Scroll/ScrollReveal";
+import ScrollReveal from "../../../../components/Scroll/ScrollReveal";
 import { Link } from "react-router-dom";
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import grassBanner from '../../../../../../assets/img/grassBannerContent.jpg';
+import grassBanner from '../../../../../assets/img/grassBannerContent.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { CardStyle } from './style';
 import { Link } from 'react-router-dom';
@@ -18,7 +18,6 @@ const Card: React.FC = () => {
           <p className="card-text text-dark">
             <small>Última atualização há 1 dia atrás</small>
           </p>
-          
                </div>
              </div>
        </Link>

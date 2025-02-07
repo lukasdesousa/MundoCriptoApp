@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import Card from "../../../../App/Analyser/components/bootstrap/Card/Card";
+import Card from "../../../../App/components/bootstrap/Card/Card";
 import { ContentStyle } from "./styled";
 
 const Content: React.FC = () => {

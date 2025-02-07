@@ -13,6 +13,20 @@ export const Main = styled.main<React.CSSProperties>`
         padding: 17px;
     }
     
+    section.main-timeline {
+        text-align: center;
+        span {
+            hyphens: auto;
+            font-size: 100%;
+            
+        }
+
+        p {
+            text-align: inherit;
+            padding: 0;
+        }
+    }
+    
 
     @media (max-width: 575px) {
         padding: 7px;
@@ -28,6 +42,7 @@ export const Main = styled.main<React.CSSProperties>`
            font-size: 13px;
            text-align: justify;
            padding: 10px;
+           hyphens: auto;
        }
     
        p.opn-P, h1.opn-H1 {
