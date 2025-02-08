@@ -262,6 +262,10 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
         
 
         section.warning {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             p {
                 position: relative;
                 bottom: 0;
