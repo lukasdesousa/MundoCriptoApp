@@ -41,11 +41,11 @@ export default function DevComm() {
             alignItems: 'center',
           }}
         >
-          <Avatar src={avatar05} size="lg" />
+          <Avatar src={avatar05} size="lg" alt='Avatar da área dos comentários do desenvolvedor'/>
           <AvatarGroup size="sm" sx={{ '--Avatar-size': '28px' }}>
-            <Avatar src={avatar02} />
-            <Avatar src={avatar03} />
-            <Avatar src={avatar04} />
+            <Avatar src={avatar02} alt='Avatar da área dos comentários do desenvolvedor'/>
+            <Avatar src={avatar03} alt='Avatar da área dos comentários do desenvolvedor'/>
+            <Avatar src={avatar04} alt='Avatar da área dos comentários do desenvolvedor'/>
             <Avatar>+4K</Avatar>
           </AvatarGroup>
         </Box>
@@ -70,7 +70,6 @@ export default function DevComm() {
           <Button variant="soft" color="neutral">
             <FaThumbsDown />
           </Button>
-      
         </CardActions>
       </Card>
     </DevcommStyle>

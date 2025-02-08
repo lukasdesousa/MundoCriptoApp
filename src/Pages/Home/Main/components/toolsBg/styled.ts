@@ -63,6 +63,10 @@ export const ContainerTools = styled.section<React.CSSProperties>`
         
 
         section.warning {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             p {
                 position: relative;
                 bottom: 0;
