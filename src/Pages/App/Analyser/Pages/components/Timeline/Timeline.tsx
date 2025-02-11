@@ -23,7 +23,7 @@ export default function CustomizedTimeline() {
               variant="body2"
               color="text.secondary"
             >
-              Não Iniciado
+              Iniciado
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector />
