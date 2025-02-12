@@ -26,11 +26,11 @@ export default function CustomizedTimeline() {
               Iniciado
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot>
+              <TimelineConnector style={{backgroundColor: 'black'}}/>
+              <TimelineDot style={{color: 'black'}}>
                 <CalendarTodayIcon />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector style={{backgroundColor: 'black'}}/>
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
               <Typography variant="h6" component="span">
@@ -45,14 +45,15 @@ export default function CustomizedTimeline() {
               variant="body2"
               color="text.secondary"
             >
-              Não Iniciado
+              Iniciado <br />
+              Saiba mais no <a href="https://github.com/lukasdesousa/MundoCriptoAnalyserAPI" target='_blank'>README</a> da API
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector />
-              <TimelineDot color="primary">
+              <TimelineConnector style={{backgroundColor: 'black'}}/>
+              <TimelineDot color={"primary"}>
                 <LaptopMacIcon />
               </TimelineDot>
-              <TimelineConnector />
+              <TimelineConnector style={{backgroundColor: 'black'}}/>
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
               <Typography variant="h6" component="span">
@@ -74,7 +75,7 @@ export default function CustomizedTimeline() {
               <TimelineDot color="primary" variant="outlined">
                 <BugReportIcon />
               </TimelineDot>
-              <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+              <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '12px', px: 2 }}>
               <Typography variant="h6" component="span">
@@ -92,7 +93,7 @@ export default function CustomizedTimeline() {
               Não Iniciado
             </TimelineOppositeContent>
             <TimelineSeparator>
-              <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+              <TimelineConnector />
               <TimelineDot color="secondary">
                 <RocketLaunchIcon />
               </TimelineDot>
