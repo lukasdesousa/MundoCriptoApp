@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Route path={'/MundoCriptoApp'} element={<Home />} />
       <Route path={'/MundoCriptoApp/grass'} element={<Grass />} />
       <Route path={'/MundoCriptoApp/analyserTool'} element={<Analyser />} />
-      <Route path={'/MundoCriptoApp/Analyser/Etapas'} element={<AnalyserExample />} />
+      <Route path={'/MundoCriptoApp/analyser/etapas'} element={<AnalyserExample />} />
     </Routes>
   );
 };

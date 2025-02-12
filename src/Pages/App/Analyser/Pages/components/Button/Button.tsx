@@ -7,7 +7,7 @@ const NextButton = () => {
   return (
     <ScrollReveal>
         <NextButtonStyle>
-            <Link to={'/MundoCriptoApp/Analyser/Etapas'}>
+            <Link to={'/MundoCriptoApp/analyser/etapas'}>
                 <div className="wrapper">
                   <a className="cta">
                     <span>Etapas</span>
