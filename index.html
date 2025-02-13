@@ -19,12 +19,23 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/MundoCriptoApp/assets/favicon-32x32-CWm4oDTv.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/MundoCriptoApp/assets/favicon-16x16-BiyEI3ML.png">
   <title>Mundo Cripto - Notícias e Dicas sobre criptomoedas</title>
-  <script type="module" crossorigin src="/MundoCriptoApp/assets/index-DvO-SnDf.js"></script>
+  <script type="module" crossorigin src="/MundoCriptoApp/assets/index-DVf0NL7X.js"></script>
   <link rel="stylesheet" crossorigin href="/MundoCriptoApp/assets/index-Cve9inic.css">
 </head>
 
 <body>
   <div id="root"></div>
+  <script>
+    (function(){
+      // Recupera a URL armazenada no sessionStorage
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect; // Limpa o sessionStorage
+      if (redirect && redirect != location.href) {
+        // Redireciona para a URL original usando o history.replaceState
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <noscript>Este site requer JavaScript para funcionar corretamente. Por favor, ative-o em seu navegador.</noscript>
 </body>
 
