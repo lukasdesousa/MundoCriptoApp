@@ -4,7 +4,7 @@
 
 ## 🚀 Funcionalidades
 
-### 🔍 **ANALISER** (AINDA A SER IMPLEMENTADA)
+### 🔍 **ANALISER** (A API JÁ FOI CRIADA, LEIA O README DA API <a href="https://github.com/lukasdesousa/MundoCriptoAnalyserAPI">AQUI</a>)
 Uma das funcionalidades principais do **Mundo Cripto** é a ferramenta **ANALISER**. Com ela, será possível:
 - **Identificar rug pulls (golpes)** em criptomoedas apenas com o endereço de contrato do token.
 - A ferramenta vai analisar a segurança do projeto de forma rápida, ajudando os investidores a se protegerem de fraudes no mercado cripto.
@@ -35,4 +35,5 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 
 ## 🤝 Agradecimentos
 Agradeço a todos que estão acompanhando e contribuindo com ideias para tornar esse projeto ainda mais útil para a comunidade 🙌
+
 
