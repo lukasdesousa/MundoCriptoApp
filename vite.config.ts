@@ -12,5 +12,5 @@ export default defineConfig({
       threshold: 10240, 
     }),
   ],
-  base: '/MundoCriptoApp',
+  base: '/MundoCriptoApp/',
 });

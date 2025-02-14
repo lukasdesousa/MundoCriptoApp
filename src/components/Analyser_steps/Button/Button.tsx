@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ScrollReveal from "../../../../../../components/Scroll/ScrollReveal";
+import ScrollReveal from "../../Scroll/ScrollReveal";
 import { NextButtonStyle } from './Styled'
 
 const NextButton = () => {
   return (
     <ScrollReveal>
         <NextButtonStyle>
-            <Link to={'/MundoCriptoApp/analyser/etapas'}>
+            <Link to={'/analyserTool/analyser/etapas'}>
                 <div className="wrapper">
                   <a className="cta">
                     <span>Etapas</span>

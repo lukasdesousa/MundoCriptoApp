@@ -5,15 +5,14 @@ import AnalyserExample from './Pages/App/Analyser/Pages/example/AnalyserExample'
 import { Analyser } from './Pages/App/Analyser/Analyser';
 import Grass from './Pages/Home/Elements/Grass';
 
-
 const App: React.FC = () => {
   return (
-    <Routes>
-      <Route path={'/MundoCriptoApp'} element={<Home />} />
-      <Route path={'/MundoCriptoApp/grass'} element={<Grass />} />
-      <Route path={'/MundoCriptoApp/analyserTool'} element={<Analyser />} />
-      <Route path={'/MundoCriptoApp/analyser/etapas'} element={<AnalyserExample />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/grass" element={<Grass />} />
+        <Route path="/analyserTool" element={<Analyser />} />
+        <Route path="/analyserTool/analyser/etapas" element={<AnalyserExample />} />
+      </Routes>
   );
 };
 

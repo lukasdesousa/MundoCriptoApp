@@ -23,7 +23,7 @@ export default function CustomizedTimeline() {
               variant="body2"
               color="text.secondary"
             >
-              Iniciado
+              Concluído
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineConnector style={{backgroundColor: 'black'}}/>

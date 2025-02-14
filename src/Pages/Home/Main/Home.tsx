@@ -7,7 +7,7 @@ import WarningMedia from '../../../components/Warnings/WarningMedia.tsx';
 import { useMediaQuery } from 'react-responsive';
 import WeekVideos from './components/VideoArea/WeekVideos.tsx';
 import PostsArea from './components/PostsArea/PostsArea.tsx';
-import Card from '../../App/components/bootstrap/Card/Card.tsx';
+import Card from '../../../components/Analyser_components/bootstrap/Card/Card.tsx';
 import DevComm from './components/DevComments/DevComments.tsx';
 
 function App() {
