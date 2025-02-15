@@ -286,7 +286,7 @@ Please change the parent <Route path="${k}"> to <Route path="${k==="/"?"*":`${k}
        }
     }
 `,w_=()=>C.jsx(C.Fragment,{children:C.jsx(ze,{children:C.jsxs(x_,{children:[C.jsx("section",{className:"warning",children:C.jsx("p",{children:"Em desenvolvimento"})}),C.jsx("section",{className:"infos",children:C.jsxs("div",{children:[C.jsx("h2",{children:"Analyser"}),C.jsx(ze,{children:C.jsx("p",{children:"Uma ferramenta ágil e eficaz, capaz de analisar criptomoedas e potenciais riscos em segundos."})})]})})]})})}),Cd=Rt.main`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+   // @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
     section.card-container {
         border-bottom: 1px solid #E6E6E6;
