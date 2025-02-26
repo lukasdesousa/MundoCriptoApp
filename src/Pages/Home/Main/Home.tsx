@@ -1,6 +1,6 @@
 import Header from '../../../components/Header/Header.tsx';
 import { ToolArea } from './components/ToolsArea/ToolArea.tsx';
-import { Main } from '../../../components/MainP/styled.ts';
+import { Main } from '../../../styles/components_styles/MainStyle/styled.ts';
 import Footer from '../../../components/Footer/Footer.tsx';
 import ScrollReveal from '../../../components/Scroll/ScrollReveal.tsx';
 import WarningMedia from '../../../components/Warnings/WarningMedia.tsx';

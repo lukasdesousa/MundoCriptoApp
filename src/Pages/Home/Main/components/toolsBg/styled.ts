@@ -3,21 +3,25 @@ import toolsBg from '../../assets/img/toolsBg.png';
 
 export const ContainerTools = styled.section<React.CSSProperties>`
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-
 
     width: 100%;
-    height: 200px;
+    height: 80%;
     display: block;
     margin: auto;
     background-image: url(${toolsBg});
     background-size: cover;
     border-radius: 10px;
+
+    a {
+        text-decoration: none;
+    }
     
 
     section.warning {
         background-color: rgba(255, 255, 255, 0.3);
         height: 25px;
+         
+        color: black;
         
         p {
             text-align: center;
@@ -33,6 +37,7 @@ export const ContainerTools = styled.section<React.CSSProperties>`
         display: flex;
 
         
+        
         div {
             display: flex;
             align-items: flex-start;
@@ -41,16 +46,17 @@ export const ContainerTools = styled.section<React.CSSProperties>`
             color: white;
             
             p {
+                background: rgba(16, 165, 246, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(248, 248, 248, 0.37);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
                 font-size: 15px;
                 text-align: left;
-                font-family: 'Source Code Pro', poppins, Arial, Helvetica, sans-serif;
+                font-family: 'fira code', poppins, Arial, Helvetica, sans-serif;
                 padding: 10px;
-            }
-
-            h2 {
-                font-size: 20px;
-                text-align: left;
-                font-family: 'Source Code Pro', poppins, Arial, Helvetica, sans-serif;
+                
             }
             
             
@@ -79,9 +85,6 @@ export const ContainerTools = styled.section<React.CSSProperties>`
             p {
                 font-size: 20px;
                 ;
-            }
-            h2 {
-                font-size: 25px;
             }
         }
        }

@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Avatar from '@mui/joy/Avatar';
 import AvatarGroup from '@mui/joy/AvatarGroup';
 import Box from '@mui/joy/Box';
@@ -52,7 +51,7 @@ export default function DevComm() {
         <CardContent>
           <Typography level="title-lg">Lukas De Souza</Typography>
           <Typography level="body-sm">
-            Olá! Seja muito bem-vindo(a) ao <em>Mundo Cripto!</em> Como vai o seu dia?
+            Olá! A API do <strong>Mundo Cripto</strong> <span>Analyser</span> já está disponível, saiba mais no <a href="https://github.com/lukasdesousa/MundoCriptoAnalyserAPI" target='_blank'>repositório da API</a>
           </Typography>
         </CardContent>
         <CardActions buttonFlex="0 1 120px">

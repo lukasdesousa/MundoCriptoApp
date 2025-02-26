@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { RevealContent } from "./styled";
+import { RevealContent } from "../../styles/components_styles/ScrollStyle/styled";
 
 interface ScrollRevealProps {
   children: React.ReactNode;

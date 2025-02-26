@@ -4,6 +4,7 @@ import compression from 'vite-plugin-compression';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/MundoCriptoApp/',
   plugins: [
     react(),
     compression({
@@ -12,5 +13,4 @@ export default defineConfig({
       threshold: 10240, 
     }),
   ],
-  base: '/MundoCriptoApp/',
 });

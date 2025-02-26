@@ -1,5 +1,5 @@
 import React from "react";
-import { HeadAnalyserStyle } from "./styled";
+import { HeadAnalyserStyle } from "../../../styles/analyser_styles/Header/styled";
 import ScrollReveal from "../../Scroll/ScrollReveal";
 import { Link } from "react-router-dom";
 

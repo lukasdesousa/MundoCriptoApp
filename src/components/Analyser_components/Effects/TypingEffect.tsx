@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Typed } from 'react-typed'; 
-import { TypingStyle } from './styled';
+import { TypingStyle } from '../../../styles/analyser_styles/Effects/styled';
 
 export const TypedDescription: React.FC = () => {
   const typedElement = useRef<HTMLDivElement | null>(null);

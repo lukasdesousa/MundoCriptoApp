@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
-import { ParallaxStyle } from "./styled";
+import { ParallaxStyle } from "../../styles/components_styles/ImagesEfx/styled";
 
 interface ParallaxImageProps {
   imageSrc: string;

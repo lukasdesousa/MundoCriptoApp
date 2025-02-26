@@ -1,5 +1,5 @@
 import React from "react";
-import { WarningStyle } from "./styled";
+import { WarningStyle } from "../../styles/components_styles/Warnings_styles/styled";
 import { MdWarning } from 'react-icons/md';
 
 

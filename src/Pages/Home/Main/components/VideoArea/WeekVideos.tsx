@@ -2,7 +2,6 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { Navigation, Pagination } from 'swiper/modules';
-import { ContentStyle } from './styled';
 
 const videos = [
   { id: '2verMICybCg', title: 'Altcoin Season Chegou no Mercado Cripto?' },
