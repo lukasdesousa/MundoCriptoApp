@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import toolsBg from '../../assets/img/toolsBg.png';
+import toolsBg from '../../Pages/Home/Main/assets/img/toolsBg.png';
 
 export const ContainerTools = styled.section<React.CSSProperties>`
 

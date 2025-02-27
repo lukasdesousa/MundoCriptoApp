@@ -1,6 +1,6 @@
 import React from "react";
 import { HeadStyle } from "./styled";
-import ScrollReveal from "../../../components/Scroll/ScrollReveal";
+import ScrollReveal from "../../Scroll/ScrollReveal";
 import { Link } from "react-router-dom";
 
 const HeaderGrass: React.FC = () => {

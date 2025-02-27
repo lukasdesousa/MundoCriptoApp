@@ -13,7 +13,7 @@ import avatar03 from './img/avatar03.avif';
 import avatar04 from './img/avatar04.avif';
 import avatar05 from './img/avatar05.jpg';
 import { FaThumbsDown } from 'react-icons/fa';
-import { DevcommStyle } from './styled';
+import { DevcommStyle } from '../../../styles/DevComments-styles/styled';
 import { useMediaQuery } from 'react-responsive';
 
 export default function DevComm() {

@@ -8,9 +8,9 @@ import woman03 from '../../assets/img/woman04.jpg';
 import ScrollReveal from '../../components/Scroll/ScrollReveal.tsx';
 import GrassInf from '../../components/Chart/GrassInf.tsx';
 import ParallaxImage from '../../components/imagesEffects/ParallaxImage.tsx';
-import Post from './PostGrass/Post.tsx';
+import Post from '../../components/Grass/PostGrass/Post.tsx';
 import { VerifyDisplay } from '../../utils/Grass/verifyDisplay.ts';
-import HeaderGrass from './Header/HeaderGrass.tsx';
+import HeaderGrass from '../../components/Grass/Header/HeaderGrass.tsx';
 
 function Grass() {
 

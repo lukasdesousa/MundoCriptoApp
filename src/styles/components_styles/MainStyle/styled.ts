@@ -306,9 +306,13 @@ export const Main = styled.main<React.CSSProperties>`
        }
 
        .main-texts {
+        
         p {
-            padding: 0px 100px;
-            text-align: center;
+            display: block;
+            margin: auto;
+            padding: 20px 0px;
+            width: 90%;
+            text-align: justify;
         }
        }
 

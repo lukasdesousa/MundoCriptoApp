@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Card: React.FC = () => {
   return (
     <CardStyle>
-       <Link to={'/MundoCriptoApp/grass'}>
+       <Link to={'/grass'}>
          <div className="card">
                <img src={grassBanner} className="card-img" alt="Card image" />
                <div className="card-img-overlay">

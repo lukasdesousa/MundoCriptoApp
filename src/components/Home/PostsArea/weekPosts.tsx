@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {ContentStyle} from "./style";
+import { ContentStyle } from "../../../styles/PostsArea-styles/style";
 
 export const WeekPost: React.FC = () => {
   useEffect(() => {

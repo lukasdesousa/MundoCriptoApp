@@ -1,14 +1,14 @@
 import Header from '../../../components/Header/Header.tsx';
-import { ToolArea } from './components/ToolsArea/ToolArea.tsx';
+import ToolArea from '../../../components/Home/ToolsArea/ToolArea.tsx';
 import { Main } from '../../../styles/components_styles/MainStyle/styled.ts';
 import Footer from '../../../components/Footer/Footer.tsx';
 import ScrollReveal from '../../../components/Scroll/ScrollReveal.tsx';
 import WarningMedia from '../../../components/Warnings/WarningMedia.tsx';
 import { useMediaQuery } from 'react-responsive';
-import WeekVideos from './components/VideoArea/WeekVideos.tsx';
-import PostsArea from './components/PostsArea/PostsArea.tsx';
+import WeekVideos from '../../../components/Home/VideosArea/WeekVideos.tsx';
+import PostsArea from './../../../components/Home/PostsArea/PostsArea.tsx';
 import Card from '../../../components/Analyser_components/bootstrap/Card/Card.tsx';
-import DevComm from './components/DevComments/DevComments.tsx';
+import DevComm from '../../../components/Home/DevComments/DevComments.tsx';
 
 function App() {
   const isDesktop = useMediaQuery({ query: '(min-width: 576px)' });
@@ -19,6 +19,10 @@ function App() {
       <Header />
       <Main><ScrollReveal>
         <h1>Conteúdos Recentes</h1>
+        <section className='main-texts'>
+        <p className='txt-access'>Bem-vindo(a)! Nessa área você encontrará os conteúdos publicados recentemente. Todos os conteúdos são analisados cuidadosamente para evitar a propagação de notícias falsas. Nessa área você encontrará também informações sobre airdrops, acontecimentos no mundo cripto e dentre outros:
+        </p>
+        </section>
           <section className='card-container'>
             <Card />
           </section>
@@ -31,7 +35,9 @@ function App() {
             <p className='txt-access'>
               Ferramentas no portal Mundo Cripto são aprimoradas constatemente, com o intuito de melhorar a experiência do usuário. Essa área da Mundo Cripto ainda está em desenvolvimento, estamos aperfeiçoando antes de qualquer interação com o público.
             </p>
-              <ToolArea />
+              <ToolArea /><br /><br />
+              <h2>Uma ferramenta de análise de risco</h2>
+              <p>A Analyser é capaz de analisar em segundos um contrato de uma criptomoeda na rede Solana, avaliando os riscos com base nos dados da moeda, como: sua liquidez, seus holders, seus criadores, seus metadados e vários outros dados. Basta copiar e colar o endereço de uma criptomoeda da rede Solana e pronto! Você terá em suas mãos uma análise rápida e profunda. O que normalmente levaria cerca de 1 a 2 horas, você terá em segundos. Uma ferramenta pensada para o uso de <strong>traders de memecoins</strong> que perdem tempo analisando suas moedas manualmente. Teste agora mesmo!</p>
             </section>
             <br />
           </ScrollReveal>
