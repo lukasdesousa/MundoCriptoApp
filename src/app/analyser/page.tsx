@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // app/AnalyserV1.tsx
 import React from "react";
 import AnalyserGrid from "@/components/Analyser_components/AnalyserV1-interface/AnalyserV1-interface";

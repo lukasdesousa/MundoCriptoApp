@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // pages/index.tsx
 import Header from '@/components/Header/Header';
 import ToolArea from '@/components/Home_components/ToolsArea/ToolArea';

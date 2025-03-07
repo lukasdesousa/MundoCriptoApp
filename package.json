@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint .",
-    "deploy": "next build && gh-pages -d dist"
+    "deploy": "next build"
   },
   "dependencies": {
     "@ant-design/colors": "^7.2.0",

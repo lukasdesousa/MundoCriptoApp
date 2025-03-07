@@ -1,8 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { SetVisibility } from "../pages/App/Analyser/utils/VerifyButtonVisibility";
 
 interface DataState {
-  data: Record<string, any> | null; // Pode ser um objeto genérico
+  data: Record<string, unknown> | null; // Pode ser um objeto genérico
   isVisible: boolean;
   loading: boolean;
 }
@@ -19,7 +18,7 @@ const dataSlice = createSlice({
   name: "data",
   initialState,
   reducers: {
-    setData: (state, action: PayloadAction<Record<string, any>>) => {
+    setData: (state, action: PayloadAction<Record<string, unknown>>) => {
       state.data = action.payload;
     },
     setLoading: (state, action) => {

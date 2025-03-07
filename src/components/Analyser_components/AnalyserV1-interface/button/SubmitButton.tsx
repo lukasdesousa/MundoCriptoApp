@@ -3,6 +3,8 @@ import { Button, ButtonProps, buttonClasses } from '@mui/base/Button';
 import { styled, Theme } from '@mui/system';
 
 const ButtonRoot = React.forwardRef(function ButtonRoot(
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   props: React.PropsWithChildren<{}>,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   ref: React.ForwardedRef<any>,

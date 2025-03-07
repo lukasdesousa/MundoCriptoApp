@@ -1,6 +1,6 @@
 import { VerifyScore } from "./VerifyToken";
 import { useSelector } from "react-redux";
-import { RootState } from "../../src/store/store";
+import { RootState } from "@/store/store";
 
 export const ScoreSummary = (type: string) => {
     const data = useSelector((state: RootState) => state.data.data);

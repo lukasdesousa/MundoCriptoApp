@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "baseUrl": "./",
+    "noImplicitAny": false,
     "paths": {
       "@/*": [
         "src/*"
