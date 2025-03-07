@@ -1,3 +1,5 @@
+"use client";
+
 import styled, { CSSProperties } from "styled-components";
 
 export const DevcommStyle = styled.section<CSSProperties>`

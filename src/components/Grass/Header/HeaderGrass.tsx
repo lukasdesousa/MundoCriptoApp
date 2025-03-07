@@ -1,7 +1,7 @@
 import React from "react";
 import { HeadStyle } from "./styled";
 import ScrollReveal from "../../Scroll/ScrollReveal";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const HeaderGrass: React.FC = () => {
     return <>
@@ -11,7 +11,7 @@ const HeaderGrass: React.FC = () => {
                     <h1>Mundo Cripto</h1>
                     <section>
                         <ul>
-                            <li><Link to={'/'}>Home</Link></li>
+                            <li><Link href="/">Home</Link></li>
                             <li><a href="https://www.linkedin.com/in/lukasdesouza/" target="_blank"><button>LinkedIn</button></a></li>
                         </ul>
                     </section>

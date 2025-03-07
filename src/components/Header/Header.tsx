@@ -1,7 +1,7 @@
 import React from "react";
-import { HeadStyle } from "../../styles/components_styles/Header/styled";
+import { HeadStyle } from "@/styles/components_styles/Header/styled";
 import ScrollReveal from "../Scroll/ScrollReveal";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const Header: React.FC = () => {
     return <>
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                     <h1>Mundo Cripto</h1>
                     <section>
                         <ul>
-                            <li><Link to={'/analyserTool/v1'}>Analyser</Link></li>
+                            <li><Link href="/analyser">Analyser</Link></li>
                             <li><a href="https://www.linkedin.com/in/lukasdesouza/" target="_blank"><button>LinkedIn</button></a></li>
                         </ul>
                     </section>

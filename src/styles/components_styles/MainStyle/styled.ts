@@ -1,6 +1,9 @@
+"use client";
+
 import styled from "styled-components";
 
 export const Main = styled.main<React.CSSProperties>`
+    font-family: inter, Arial, Helvetica, sans-serif;
 
     section.card-container {
         border-bottom: 1px solid #E6E6E6;
@@ -50,6 +53,7 @@ export const Main = styled.main<React.CSSProperties>`
     
        p.txt-access {
            opacity: 0.85;
+           text-align: center;
        }
 
        section.week-videos {
@@ -66,16 +70,6 @@ export const Main = styled.main<React.CSSProperties>`
            font-weight: bold;
            padding: 0px 10px;
            text-align: center;
-       }
-    
-       button {
-           background-color: black;
-           color: white;
-           width: 120px;
-           height: 50px;
-           border-radius: 5px;
-           font-size: 13px;
-           border: none;
        }
     
        section.opn-inv {
@@ -189,16 +183,6 @@ export const Main = styled.main<React.CSSProperties>`
            margin-right: 10px;
            text-align: center;
            
-       }
-    
-       button {
-           background-color: black;
-           color: white;
-           width: 120px;
-           height: 50px;
-           border-radius: 5px;
-           font-size: 15px;
-           border: none;
        }
 
        .main-texts {
@@ -342,17 +326,6 @@ export const Main = styled.main<React.CSSProperties>`
            font-weight: bold;
            margin: 20px 0px;
            text-align: center;
-       }
-    
-       button {
-           background-color: black;
-           color: white;
-           width: 130px;
-           height: 60px;
-           border-radius: 5px;
-           font-size: 16px;
-           border: none;
-           margin-bottom: 25px;
        }
     
        section.opn-inv {

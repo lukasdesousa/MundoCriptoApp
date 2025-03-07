@@ -5,7 +5,7 @@ import CircularProgress, {
 } from '@mui/material/CircularProgress';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { VerifyScore } from '../../../../Pages/App/Analyser/utils/VerifyToken';
+import { VerifyScore } from '@/analyser-utils/utils/VerifyToken';
 
 function CircularProgressWithLabel(
   props: CircularProgressProps & { value: number },

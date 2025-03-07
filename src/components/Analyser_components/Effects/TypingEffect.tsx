@@ -1,3 +1,4 @@
+/*
 import React, { useEffect, useRef } from 'react';
 import { Typed } from 'react-typed'; 
 import { TypingStyle } from '../../../styles/analyser_styles/Effects/styled';
@@ -38,3 +39,4 @@ export const TypedDescription: React.FC = () => {
 };
 
 export default TypedDescription;
+*/

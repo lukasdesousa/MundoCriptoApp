@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterStyle } from "../../styles/components_styles/Footer/styled";
+import { FooterStyle } from "@/styles/components_styles/Footer/styled";
 import ScrollReveal from "../Scroll/ScrollReveal";
 
 const Footer: React.FC = () => {

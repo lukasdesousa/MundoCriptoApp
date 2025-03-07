@@ -1,6 +1,9 @@
+"use client";
+
 import styled from "styled-components";
 
 export const HeadStyle = styled.header<React.CSSProperties>`
+font-family: inter, Arial, Helvetica, sans-serif;
 
 /* Small screen */
 @media (max-width: 575px) {

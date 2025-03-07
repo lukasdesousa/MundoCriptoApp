@@ -1,15 +1,17 @@
+"use client";
+
 import { ColorPaletteProp, CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import Button from "@mui/joy/Button";
 import Card, { CardPropsColorOverrides } from "@mui/joy/Card";
 import CardContent from "@mui/joy/CardContent";
 import CardActions from "@mui/joy/CardActions";
 import Typography from "@mui/joy/Typography";
-import { VerifyButtonVisibility } from "../../../../Pages/App/Analyser/utils/VerifyButtonVisibility";
+import { VerifyButtonVisibility } from "@/analyser-utils/utils/VerifyButtonVisibility";
 import { useDispatch } from "react-redux";
 import { showDeepResults } from "../../../../store/dataSlice";
-import { PickColor } from "../../../../Pages/App/Analyser/utils/pickColor";
+import { PickColor } from "@/analyser-utils/utils/pickColor";
 import { OverridableStringUnion } from "@mui/types";
-import { VerifyToken, VerifyWarn } from "../../../../Pages/App/Analyser/utils/VerifyToken";
+import { VerifyToken, VerifyWarn } from "@/analyser-utils/utils/VerifyToken";
 import TokenPicture from "../tokenPicture";
 
 // 🎨 Criando um tema personalizado

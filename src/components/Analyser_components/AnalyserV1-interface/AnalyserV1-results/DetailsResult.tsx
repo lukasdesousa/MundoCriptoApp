@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import { ColorPaletteProp, CssVarsProvider, extendTheme } from "@mui/joy/styles";
 import Box from "@mui/joy/Box";
@@ -6,14 +8,14 @@ import CardContent from "@mui/joy/CardContent";
 import CardActions from "@mui/joy/CardActions";
 import Chip from "@mui/joy/Chip";
 import Typography from "@mui/joy/Typography";
-import { VerifyScore } from "../../../../Pages/App/Analyser/utils/VerifyToken";
+import { VerifyScore } from "@/analyser-utils/utils/VerifyToken";
 import { CardPropsColorOverrides } from "@mui/joy/Card";
 import { OverridableStringUnion } from "@mui/types";
-import { PickColor } from "../../../../Pages/App/Analyser/utils/pickColor";
-import { ScoreSummary } from "../../../../Pages/App/Analyser/utils/deepSearch";
+import { PickColor } from "@/analyser-utils/utils/pickColor";
+import { ScoreSummary } from "@/analyser-utils/utils/deepSearch";
 import PercentageIndex from "./PercentageIndex";
-import { RisksDescriptions } from "../../../../Pages/App/Analyser/utils/risksDescription-variables";
-import { RootState } from "../../../../store/store";
+import { RisksDescriptions } from "@/analyser-utils/utils/risksDescription-variables";
+import { RootState } from "@/store/store";
 import { useSelector } from "react-redux";
 import FadeIn from "./animations/FadeIn";
 

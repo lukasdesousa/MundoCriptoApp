@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { SetVisibility } from "../Pages/App/Analyser/utils/VerifyButtonVisibility";
+import { SetVisibility } from "../pages/App/Analyser/utils/VerifyButtonVisibility";
 
 interface DataState {
   data: Record<string, any> | null; // Pode ser um objeto genérico

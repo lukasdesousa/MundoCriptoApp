@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from 'react';
 import { extendTheme } from '@mui/material/styles';
 import DashboardIcon from '@mui/icons-material/Dashboard';
@@ -10,6 +12,7 @@ import ReadmeContent from './ReadMe';
 import InputContent from './InputsContent';
 import { AnalyserV1Styles } from "../../../styles/AnalyserV1-Styles/styled";
 import { Results } from './AnalyserV1-results/Results';
+import KofiWarn from '../../kofi/kofi-warn';
 
 const NAVIGATION: Navigation = [
   {
@@ -83,6 +86,7 @@ export default function AnalyserGrid() {
       >
       <AnalyserV1Styles>
         <DashboardLayout>
+        <KofiWarn />
           <PageContainer >
             {router.pathname === '/integrations' ? (
               <ReadmeContent /> ) : (

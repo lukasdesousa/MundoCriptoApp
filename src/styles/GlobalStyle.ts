@@ -2,7 +2,6 @@ import { createGlobalStyle, CSSProperties } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle<CSSProperties>`
 
-
   * {
     margin: 0;
     padding: 0;

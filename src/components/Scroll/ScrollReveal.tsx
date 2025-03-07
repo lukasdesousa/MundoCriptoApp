@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect, useRef } from "react";
 import { RevealContent } from "../../styles/components_styles/ScrollStyle/styled";
 

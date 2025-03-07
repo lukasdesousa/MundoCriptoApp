@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from 'react';
+"use client";
+
+import React, { useState } from 'react';
 import { Typography, Box } from '@mui/material';
 import { InputContentStyle } from '../../../styles/AnalyserV1-Styles/input-content/styled';
 import TextField from '@mui/material/TextField';
 import SubmitButton from './button/SubmitButton';
-import { fetchTokenReport } from '../../../api/GetTokenReport';
+import { fetchTokenReport } from '../../../services/GetTokenReport';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../../store/store';
 import { setData, setLoading } from '../../../store/dataSlice';
 import Loading from './AnalyserV1-results/animations/Loading';
 import { notification } from 'antd';
 
-
-
 const InputContent: React.FC = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state: RootState) => state.data.loading);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [errors, setError] = useState('');
-  const solAdressRegex = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
   const [api, contextHolder] = notification.useNotification();
   
   
@@ -36,16 +36,6 @@ const InputContent: React.FC = () => {
       showProgress: true,
     });
     return;
-    }else if (!solAdressRegex.test(inputValue.value)) {
-      setError('Endereço inválido, insira um endereço da rede solana!')
-      api.error({
-        message: 'Erro',
-        description: 'Insira um endereço da rede solana!',
-        duration: 4, // Tempo de exibição da notificação (segundos)
-        closeIcon: null, // Remove botão de fechar para evitar que fechem antes do tempo
-        showProgress: true,
-      });
-      return;
     } else {
       setError('')
     } 
@@ -62,10 +52,10 @@ const InputContent: React.FC = () => {
       })
       dispatch(setData(data));
     } catch {
-      setError('Ocorreu um erro ao buscar o dados do token...')
+      setError('Ocorreu um erro ao buscar o dados do token, certifique-se de verificar se é um endereço da rede SOLANA!')
       api.error({
         message: 'Erro',
-        description: 'Ocorreu um erro ao buscar os dados, tente novamente...',
+        description: 'Ocorreu um erro ao buscar o dados do token, certifique-se que o endereço é da rede solana.',
         duration: 5, 
         closeIcon: null,
         showProgress: true,

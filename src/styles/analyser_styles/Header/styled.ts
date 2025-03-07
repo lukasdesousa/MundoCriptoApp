@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 
 export const HeadAnalyserStyle = styled.div<React.CSSProperties>`

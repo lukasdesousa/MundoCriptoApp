@@ -1,13 +1,45 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "skipLibCheck": true,
-    "noImplicitAny": false
+    "target": "ES2022",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }, // Definir para ES2022, versão mais recente que funciona bem no Next.js
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Configura bibliotecas necessárias para o Next.js
+    "module": "ESNext", // Usar ESNext para o sistema de módulos (Next.js usa ESModules)
+    "jsx": "preserve", // Manter JSX preservado para ser processado pelo Next.js
+    "esModuleInterop": true, // Habilitar interoperabilidade entre CommonJS e ES Modules
+    "moduleResolution": "node", // Como o Node resolve módulos, necessário para o Next.js
+    "resolveJsonModule": true, // Permite importar arquivos JSON
+    "skipLibCheck": true, // Ignorar verificação das bibliotecas (ajuda no desempenho)
+    "strict": true, // Ativar verificações estritas para segurança e qualidade de código
+    "noUnusedLocals": true, // Verifica variáveis não utilizadas
+    "noUnusedParameters": true, // Verifica parâmetros não utilizados
+    "noEmit": true, // Não emite arquivos de saída (o Next.js lida com o bundling)
+    "incremental": true, // Habilita compilação incremental para melhorar a performance
+    "isolatedModules": true // Necessário para o Next.js, já que ele usa transformações em módulos isolados
+    ,
+    "allowJs": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+  "include": [
+    "**/*.ts", // Arquivo gerado automaticamente pelo Next.js
+    "**/*.tsx", // Incluir arquivos TypeScript
+    "next-env.d.ts" // Incluir arquivos TypeScript com JSX
+    ,
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules" // Excluir a pasta node_modules
   ]
 }
