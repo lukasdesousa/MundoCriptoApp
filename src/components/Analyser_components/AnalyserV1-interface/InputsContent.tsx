@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Typography, Box } from '@mui/material';
 import { InputContentStyle } from '../../../styles/AnalyserV1-Styles/input-content/styled';
 import TextField from '@mui/material/TextField';
@@ -15,8 +15,6 @@ import { notification } from 'antd';
 const InputContent: React.FC = () => {
   const dispatch = useDispatch();
   const loading = useSelector((state: RootState) => state.data.loading);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [errors, setError] = useState('');
   const [api, contextHolder] = notification.useNotification();
   
   
@@ -27,7 +25,6 @@ const InputContent: React.FC = () => {
     const inputValue = form.elements[0] as HTMLInputElement;
     
     if (!inputValue.value) {
-    setError('Este campo não pode estar vazio');
     api.error({
       message: 'Erro',
       description: 'Este campo não pode estar vazio.',
@@ -36,9 +33,7 @@ const InputContent: React.FC = () => {
       showProgress: true,
     });
     return;
-    } else {
-      setError('')
-    } 
+    }
     
     try {
       dispatch(setLoading(true));
@@ -52,7 +47,6 @@ const InputContent: React.FC = () => {
       })
       dispatch(setData(data));
     } catch {
-      setError('Ocorreu um erro ao buscar o dados do token, certifique-se de verificar se é um endereço da rede SOLANA!')
       api.error({
         message: 'Erro',
         description: 'Ocorreu um erro ao buscar o dados do token, certifique-se que o endereço é da rede solana.',
