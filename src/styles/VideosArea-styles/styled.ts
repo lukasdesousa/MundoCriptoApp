@@ -1,9 +1,6 @@
 import styled from "styled-components";
-import background from '../../assets/img/toolsBg.png'
-
 export const VideoStyle = styled.section<React.CSSProperties>`
     section.container {
-        background-image: url(${background});
         background-size: cover;
         width: 100%;
         padding: 8px;

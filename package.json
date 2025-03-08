@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint .",
-    "deploy": "next build"
+    "deploy": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "@ant-design/colors": "^7.2.0",
