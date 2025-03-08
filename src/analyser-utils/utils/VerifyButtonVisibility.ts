@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../../src/store/store";
+import { RootState } from "@/store/store";
 
 export function VerifyButtonVisibility() {
     const data = useSelector((state: RootState) => state.data.data);

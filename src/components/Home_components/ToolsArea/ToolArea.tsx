@@ -72,7 +72,7 @@ export default function ToolArea() {
             borderRadius: '10px'
           }}
         >
-          <Typography level='body1' sx={{ width: '100%', margin: 'auto', display: 'block'}}>
+          <Typography component='div' sx={{ width: '100%'}}>
             <AnalyserExample />
           </Typography>
         </CardContent>

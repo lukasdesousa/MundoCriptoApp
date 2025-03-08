@@ -1,13 +1,7 @@
 import React from "react";
 import { HeadAnalyserStyle } from "@/styles/analyser_styles/Header/styled";
 import Link from "next/link";
-import dynamic from "next/dynamic";
-
-// Carrega o ScrollReveal APENAS no cliente (SSR desligado)
-const ScrollReveal = dynamic(
-  () => import("../../Scroll/ScrollReveal"),
-  { ssr: true }
-);
+import ScrollReveal from "@/components/Scroll/ScrollReveal";
 
 
 const Header: React.FC = () => {

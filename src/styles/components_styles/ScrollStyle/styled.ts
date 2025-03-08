@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
-interface Props {
-  $isVisible: boolean;
-};
 
-export const RevealContent = styled.div<{ $isVisible: Props }>`
+export const RevealContent = styled.div<{ $isVisible: boolean }>`
   opacity: ${({ $isVisible }) => ($isVisible ? 1 : 0)};
   transform: ${({ $isVisible }) =>
     $isVisible ? "translateY(0)" : "translateY(50px)"};

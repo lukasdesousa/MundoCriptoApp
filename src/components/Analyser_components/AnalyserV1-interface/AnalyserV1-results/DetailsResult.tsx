@@ -41,7 +41,7 @@ const theme = extendTheme({
       fontSize: "1.8rem",
       fontWeight: "bold",
     },
-    bodyMd: {
+    "body-md": {
       fontSize: "1rem",
       color: "#666",
     },

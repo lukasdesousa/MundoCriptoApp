@@ -25,7 +25,7 @@ export const ScoreSummary = (type: string) => {
                 return 'A ferramenta Analyser buscou profundamente os dados do token inserido e as informações do tokens são caracteristicas de um token duvidoso, entenda:';
             } else if(score > 70 && data) {
                 if(data.risks) {
-                    if(data.risks.length > 0) {
+                    if(Array.isArray(data.risks) && data.risks.length > 0) {
                         return 'A ferramenta Analyser buscou profundamente os dados do token inserido e as informações do tokens são caracteristicas de um token bom, mas apresenta algum risco, entenda:';
                     }
                 }

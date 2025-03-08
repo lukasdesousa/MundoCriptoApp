@@ -1,4 +1,3 @@
-/* eslint-disable prefer-const */
 import * as React from 'react';
 import CircularProgress, {
   CircularProgressProps,

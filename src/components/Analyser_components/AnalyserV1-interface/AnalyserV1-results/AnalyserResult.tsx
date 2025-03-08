@@ -35,7 +35,7 @@ const theme = extendTheme({
       fontSize: "1.8rem",
       fontWeight: "bold",
     },
-    bodyMd: {
+    "body-md": {
       fontSize: "1rem",
       color: "#666",
     },
@@ -58,7 +58,7 @@ const AnalyserResult = () => {
  return (
     <CssVarsProvider theme={theme}>
       <Card
-        variant="neutral"
+        variant="outlined"
         color={color}
         invertedColors
         sx={{
@@ -73,7 +73,7 @@ const AnalyserResult = () => {
           <CardContent>
             <Typography level="h3">{VerifyToken('name')}</Typography>
             <Typography level="body-md">Liquidez</Typography>
-            <Typography level="h5"> {VerifyToken('liquidity')}</Typography>
+            <Typography level="h4"> {VerifyToken('liquidity')}</Typography>
             <Typography level="h4">{VerifyWarn()}</Typography>
           </CardContent>
         </CardContent>

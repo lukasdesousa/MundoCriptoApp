@@ -30,7 +30,7 @@ const theme = extendTheme({
       fontSize: "1.8rem",
       fontWeight: "bold",
     },
-    bodyMd: {
+    "body-md": {
       fontSize: "1rem",
       color: "#666",
     },
@@ -50,7 +50,7 @@ const AnalyserExample = () => {
   return (
     <CssVarsProvider theme={theme}>
       <Card
-        variant="neutral"
+        variant="outlined"
         color="primary"
         invertedColors
         sx={{
@@ -68,7 +68,7 @@ const AnalyserExample = () => {
           <CardContent>
             <Typography level="h4">Criptomoeda</Typography>
             <Typography level="body-md">Liquidez</Typography>
-            <Typography level="h5">$1,456,283.00</Typography>
+            <Typography level="h4">$1,456,283.00</Typography>
             <Typography level="h4">Riscos identificados: 3</Typography>
           </CardContent>
         </CardContent>

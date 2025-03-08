@@ -1,12 +1,13 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../../src/store/store";
+import { RootState } from "@/store/store";
 
 export const VerifyScore = () => {
-  const data = useSelector((state: RootState) => state.data.data);
+  const data = useSelector((state: RootState) => state.data.data) as { risks?: { level: string }[] };
   let score: number = 100;
 
     if (data && data.risks) {
-      data.risks.forEach((item: { level: string }) => {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
+      Array.isArray(data.risks) && data.risks.forEach((item: { level: string }) => {
         if (item.level === 'danger') {
           score -= 30;
           if(score < 0) {
@@ -27,10 +28,11 @@ export const VerifyScore = () => {
   };
 
   export const VerifyToken = (type: string) => {
-    const data = useSelector((state: RootState) => state.data.data);
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const data = useSelector((state: RootState) => state.data.data) as any;
     if(type === 'name') {
       if(data && data.tokenMeta) {
-        return data.tokenMeta.name
+        return data.tokenMeta.name;
       } else if(data) {
         return data.token;
       }
@@ -56,17 +58,23 @@ export const VerifyWarn = () => {
 
   if(score <= 50) {
     if(data && data.risks) {
-      return warn = `⚠️ Perigo, riscos identificados: ${data.risks.length}`;
+      if(Array.isArray(data.risks)) {
+        return warn = `⚠️ Perigo, riscos identificados: ${data.risks.length}`;
+      }
     }
     return warn = 'Muito perigoso';
   } else if (score > 50 && score <= 70) {
     if(data && data.risks) {
-      return warn = `⚠️ Cuidado, riscos identificados: ${data.risks.length}`;
+      if(Array.isArray(data.risks)) {
+        return warn = `⚠️ Cuidado, riscos identificados: ${data.risks.length}`;
+      }
     }
     return warn = 'Perigoso';
   } else if(score > 70 ) {
     if(data && data.risks) {
-      return warn = `Riscos identificados: ${data.risks.length}`;
+      if(Array.isArray(data.risks)) {
+        return warn = `Riscos identificados: ${data.risks.length}`;
+      }
     }
     return warn = 'Qualidade do token';
   } 

@@ -87,16 +87,15 @@ export const RisksDescriptions: React.FC = () => {
   console.log(data)
   const score = VerifyScore();
 
-  // Se não houver riscos, retorna um array com um objeto vazio
   const risksArray =
-    data && data.risks && data.risks.length > 0 ? data.risks : [{ name: "" }];
+    data && Array.isArray(data.risks) && data.risks.length > 0 ? data.risks : [{ name: "" }];
 
   return (
     <>
       {risksArray.map((item, index: number) => (
         <CardContent key={index}>
           <Typography variant="h6">
-            {data && verifyDescriptions(item.name, score, data.risks)}
+            {data && verifyDescriptions(item.name, score, data.risks as object)}
           </Typography>
         </CardContent>
       ))}
