@@ -19,8 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Provider store={store}>
           <GlobalStyle />
           {children}
-        </Provider>
           <Analytics />
+        </Provider>
       </body>
     </html>
   );
