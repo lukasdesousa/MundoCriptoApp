@@ -16,10 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={inter.className}>
       <body>
+          <Analytics />
         <Provider store={store}>
           <GlobalStyle />
           {children}
-          <Analytics />
         </Provider>
       </body>
     </html>
