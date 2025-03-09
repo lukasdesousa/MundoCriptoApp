@@ -2,12 +2,12 @@
 "use client";
 
 import { Inter } from 'next/font/google';
-import { Analytics } from '@vercel/analytics/react';
- 
+
 const inter = Inter({
   subsets: ['latin'],
 })
 
+import { Analytics } from '@vercel/analytics/react';
 import { Provider } from "react-redux";
 import { GlobalStyle } from "@/styles/GlobalStyle";
 import { store } from "@/store/store";
