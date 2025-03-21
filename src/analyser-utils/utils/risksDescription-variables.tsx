@@ -38,6 +38,8 @@ const risksDescription_vars = {
 
   highCorrelation: '⚠️ Risco alto - Os principais detentores possuem quantidades semelhantes do token, o que pode indicar possível manipulação de mercado. Isso aumenta o risco de grandes despejos (dumping), causando alta volatilidade.',
 
+  highOwnership: '⚠️ Risco alto - Os principais detentores possuem mais de 80% do token supply. Isso significa que esses usuários podem manipular o preço do token severamente, resultando em uma queda brusca do preço do ativo.',
+
   // SAFE
 
   highIndex: 'Bom - Esse token tem um índice alto, isso significa que ele passou pelos testes de riscos da ferramenta Analyser e é considerado seguro. Tokens com um alto índice contém: Uma boa liquidez, criadores sem históricos de rug-pulls, os principais holders da moeda não contém uma enorme quantidade de tokens, e dentre vários outros fatores.'
@@ -64,6 +66,8 @@ function verifyDescriptions(warnings: string, score: number, data: object) {
       return risksDescription_vars.creatorHistory;
     case 'High holder concentration':
       return risksDescription_vars.top10ThanMore50;
+    case 'High ownership':
+      return risksDescription_vars.highOwnership;
     case 'Mutable metadata':
       return risksDescription_vars.mutableMetadata;
     case 'Name Mismatch':

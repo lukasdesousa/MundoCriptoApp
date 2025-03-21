@@ -27,7 +27,7 @@ const InputContent: React.FC = () => {
     if (!inputValue.value) {
     api.error({
       message: 'Erro',
-      description: 'Este campo não pode estar vazio.',
+      description: 'O campo de endereço não pode estar vazio.',
       duration: 4, // Tempo de exibição da notificação (segundos)
       closeIcon: null, // Remove botão de fechar para evitar que fechem antes do tempo
       showProgress: true,
