@@ -88,7 +88,6 @@ function verifyDescriptions(warnings: string, score: number, data: object) {
 
 export const RisksDescriptions: React.FC = () => {
   const data = useSelector((state: RootState) => state.data.data);
-  console.log(data)
   const score = VerifyScore();
 
   const risksArray =
